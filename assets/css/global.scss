@@ -1,0 +1,31 @@
+.header{
+    height: 112vh;
+    padding: 0;
+    .banner{
+        height: 100%;
+        background-image: url("../img/banner/banner.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .navbar{
+        width: 1200px;
+        height: 111px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        .logo{
+            img{
+                display: block;
+                width: 160px;
+                height: 51px;
+            }
+        }
+        .nav{
+           
+        }
+    }
+}
