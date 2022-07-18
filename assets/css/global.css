@@ -1,3 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--Lato);
+}
+
+:root {
+  --Montserrat: "Montserrat";
+  --Lato: "Lato";
+  --Light-blue: #23c0e9;
+  --Light-red: #ef3a3a;
+  --Bright-pink: #f36969;
+  --White: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.btn {
+  border-radius: 0.25rem;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
 .header {
   height: 112vh;
   padding: 0;
@@ -14,13 +48,142 @@
   width: 1200px;
   height: 111px;
   position: absolute;
+  padding: 0px 15px 0px 15px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
 }
 .header .navbar .logo img {
   display: block;
   width: 160px;
   height: 51px;
+}
+.header .navbar .nav {
+  font-family: var(--Montserrat);
+  margin-left: auto;
+}
+.header .navbar .nav ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 5px 0;
+}
+.header .navbar .nav ul li a b {
+  margin-left: 5px;
+}
+.header .navbar .nav .button-function .search-button .btn {
+  background-color: var(--White);
+}
+.header .navbar .nav .button-function .search-button .btn i {
+  color: var(--Light-blue);
+  font-size: 14px;
+}
+.header .navbar .nav .button-function .search-button .btn:hover {
+  background-color: var(--Light-blue);
+}
+.header .navbar .nav .button-function .search-button .btn:hover i {
+  color: var(--White);
+}
+.header .navbar .nav .button-function .create-button i {
+  color: var(--White);
+}
+.header .navbar .nav .button-function .create-button .btn {
+  color: var(--White);
+  background-color: var(--Bright-pink);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 10px;
+}
+.header .navbar .nav .button-function .create-button .btn:hover {
+  background-color: var(--Light-red);
+}
+.header .banner-content {
+  width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--Montserrat);
+  color: var(--White);
+}
+.header .banner-content .title {
+  font-size: 50px;
+  font-weight: 400;
+}
+.header .banner-content .title .number-offer {
+  font-weight: 600;
+}
+.header .banner-content .sub-title {
+  margin-top: 40px;
+  font-family: var(--Lato);
+  font-size: 20px;
+  font-weight: 400;
+}
+.header .banner-content .content {
+  margin-top: 40px;
+  font-family: var(--Lato);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0 100px 0 0;
+}
+.header .banner-content .start-button {
+  margin-top: 40px;
+}
+.header .banner-content .start-button .btn {
+  padding: 12px 30px;
+  background-color: var(--White);
+  color: var(--Bright-pink);
+}
+.header .banner-content .start-button .btn:hover {
+  background-color: var(--Light-blue);
+  color: var(--White);
+}
+.header .search-job {
+  width: 250px;
+  height: 58px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background-color: var(--White);
+}
+.header .search-job .title {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--Lato);
+  text-transform: uppercase;
+}
+
+.search-box {
+  width: 100%;
+  height: 240px;
+  background-color: var(--White);
+}
+.search-box .form .form-group {
+  border-bottom: 4px solid var(--Bright-pink);
+  padding: 60px;
+}
+.search-box .form .form-group .input {
+  place-self: center;
+}
+.search-box .form .form-group .input select {
+  padding: 5px 20px;
+}
+.search-box .search-button {
+  background-color: var(--Bright-pink);
+  color: var(--White);
+  border-radius: 0;
+}
+.search-box .search-button i {
+  font-size: 50px;
+}
+.search-box .search-button:hover {
+  background-color: var(--Light-blue);
+}
+
+.job-list {
+  height: 1000px;
 }/*# sourceMappingURL=global.css.map */
