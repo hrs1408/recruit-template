@@ -177,3 +177,19 @@
         }
     }
 }
+
+.register{
+    margin-top: 100px;
+    .col-6{
+        height: 580px;
+    }
+    .line-under {
+        position: relative;
+        width: 40px;
+        height: 1px;
+        display: inline-block;
+    }
+    .content{
+        width: 300px;
+    }
+}
