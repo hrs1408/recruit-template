@@ -4,7 +4,7 @@
   background-image: url("../img/banner/banner.jpg");
 }
 #Content .banner .banner-group {
-  padding: 200px 0px 130px 0px;
+  padding: 273px 0px 130px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,4 +356,44 @@
   margin-top: 100px;
   height: 240px;
   background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/office-friends.jpg");
+}
+#Content .increa-number .box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Content .increa-number .item {
+  width: 25%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#Content .increa-number .item .align-center {
+  width: 100%;
+}
+#Content .increa-number .item .number {
+  font-family: var(--Mont);
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#Content .increa-number .item .line {
+  margin: auto;
+  width: 50px;
+  height: 1px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+#Content .increa-number .item .text {
+  font-family: var(--Pops);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#Content .popular-category {
+  margin-top: 100px;
+  height: 1000px;
 }/*# sourceMappingURL=homepage.css.map */

@@ -58,6 +58,10 @@
   flex-wrap: wrap;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .job-item {
   margin-top: 1rem;
   width: 49%;

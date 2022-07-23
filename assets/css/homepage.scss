@@ -5,7 +5,7 @@
         background-image: url("../img/banner/banner.jpg");
 
         .banner-group {
-            padding: 200px 0px 130px 0px;
+            padding: 273px 0px 130px 0px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -337,20 +337,25 @@
                     justify-content: center;
                     margin-top: 20px;
                     gap: 20px;
-                    a{
+
+                    a {
                         display: flex;
                         gap: 10px
                     }
-                    .fa-facebook-f{
+
+                    .fa-facebook-f {
                         color: #0066FF;
                     }
-                    .fa-twitter{
+
+                    .fa-twitter {
                         color: #00A1FF;
                     }
-                    .fa-instagram{
+
+                    .fa-instagram {
                         color: #FF0066;
                     }
-                    .fa-linkedin-in{
+
+                    .fa-linkedin-in {
                         color: #0077B5;
                     }
                 }
@@ -424,9 +429,56 @@
         }
     }
 
-    .increa-number{
+    .increa-number {
         margin-top: 100px;
         height: 240px;
         background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/office-friends.jpg");
+
+        .box {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            width: 25%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .align-center {
+                width: 100%;
+            }
+
+            .number {
+                font-family: var(--Mont);
+                font-size: 45px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .line {
+                margin: auto;
+                width: 50px;
+                height: 1px;
+                background-color: white;
+                margin-bottom: 10px;
+            }
+
+            .text {
+                font-family: var(--Pops);
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .popular-category {
+        margin-top: 100px;
+        height: 1000px;
     }
 }

@@ -18,3 +18,39 @@ $(document).ready(function () {
     });
 
 });
+
+function animateNumber(finalNumber, delay, startNumber = 0, callback) {
+    let currentNumber = startNumber
+    const interval = window.setInterval(updateNumber, delay)
+
+    function updateNumber() {
+        if (currentNumber >= finalNumber) {
+            clearInterval(interval)
+        } else {
+            currentNumber++
+            callback(currentNumber)
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    animateNumber(5890, 1, 0, function (number) {
+        const formattedNumber = number.toLocaleString()
+        document.getElementById('Jobs').innerText = formattedNumber
+    })
+
+    animateNumber(255472, 1, 0, function (number) {
+        const formattedNumber = number.toLocaleString()
+        document.getElementById('Member').innerText = formattedNumber
+    })
+
+    animateNumber(51428, 1, 0, function (number) {
+        const formattedNumber = number.toLocaleString()
+        document.getElementById('Resumes').innerText = formattedNumber
+    })
+
+    animateNumber(12400, 1, 0, function (number) {
+        const formattedNumber = number.toLocaleString()
+        document.getElementById('Company').innerText = formattedNumber
+    })
+})
