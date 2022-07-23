@@ -16,7 +16,12 @@ $(document).ready(function () {
         focusOnSelect: true,
         autoplay: false,
     });
-
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4
+      });
+          
 });
 
 function animateNumber(finalNumber, delay, startNumber = 0, callback) {
@@ -34,7 +39,7 @@ function animateNumber(finalNumber, delay, startNumber = 0, callback) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    animateNumber(5890, 1, 0, function (number) {
+    animateNumber(5890, 0, 0, function (number) {
         const formattedNumber = number.toLocaleString()
         document.getElementById('Jobs').innerText = formattedNumber
     })
