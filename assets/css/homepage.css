@@ -566,11 +566,94 @@
 #Content .pricing {
   margin-top: 100px;
 }
+#Content .pricing .title {
+  text-align: center;
+}
 #Content .pricing .title .sub-title {
+  margin-top: 10px;
   font-size: 16px;
   font-family: var(--Pops);
   font-weight: 400;
   margin-bottom: 10px;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+#Content .pricing .plan {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Content .pricing .plan .plan-item {
+  border: 1px solid var(--Gray-300);
+  position: relative;
+  width: 33.33%;
+  margin: 0 10px;
+}
+#Content .pricing .plan .plan-item .head {
+  padding: 40px 0;
+  text-align: center;
+  height: 190px;
+  background-color: var(--Red-100);
+}
+#Content .pricing .plan .plan-item .head p {
+  color: white;
+  font-size: 25px;
+  font-family: var(--Pops);
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#Content .pricing .plan .plan-item .head p:last-child {
+  margin-bottom: 50px;
+}
+#Content .pricing .plan .plan-item .bottom {
+  height: 380px;
+  background-color: white;
+  text-align: center;
+  padding: 70px 0;
+}
+#Content .pricing .plan .plan-item .bottom p {
+  font-size: 20px;
+  font-family: var(--Yan);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#Content .pricing .plan .plan-item .bottom .add-to-cart {
+  font-size: 16px;
+  font-family: var(--Pops);
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--Red-100);
+  color: white;
+}
+#Content .pricing .plan .plan-item .price {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--Gray-300);
+  background-color: white;
+}
+#Content .pricing .plan .plan-item .price p {
+  font-size: 40px;
+  font-family: var(--Pops);
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--Red-100);
 }/*# sourceMappingURL=homepage.css.map */
