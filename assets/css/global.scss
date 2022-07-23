@@ -1,235 +1,231 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--Lato);
+    transition: all 0.1s ease-in-out;
 }
 
 :root {
-    --Montserrat: 'Montserrat';
+    --Mont: "Montserrat", sans-serif;
     --Lato: 'Lato';
-    --Light-blue: #23c0e9;
-    --Light-red: #ef3a3a;
-    --Bright-pink: #f36969;
+    --Pops: 'Poppins';
+    --Yan: 'Yantramanav';
+    --Sky-400: #23c0e9;
+    --Red-400: #ef3a3a;
+    --Red-100: #f36969;
     --White: #ffffff;
+    --Secondary-color: #f5f5f5;
+    --Gray-300: #e5e5e5;
+
 }
 
-.container {
+.box {
+    width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
-.btn {
-    border-radius: .25rem;
-
-    &:focus {
-        outline: none;
-        box-shadow: none;
-    }
+.clear-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-.dropdown-toggle::after {
-    display: none;
+.display-block {
+    display: block;
 }
 
-.header {
-    height: 112vh;
-    padding: 0;
+.display-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
-    .banner {
-        height: 100%;
-        background-image: url("../img/banner/banner.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-    }
+.display-flex-1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-    .navbar {
-        width: 1200px;
-        height: 111px;
-        position: absolute;
-        padding: 0px 15px 0px 15px;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+.display-flex-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-        .logo {
-            img {
-                display: block;
-                width: 160px;
-                height: 51px;
-            }
-        }
+.job-item {
+    margin-top: 1rem;
+    width: 49%;
+    border: 1px solid var(--Gray-300);
+    font-family: var(--Lato);
+    &:hover {
+        border: 1px solid var(--Sky-400);
+        .tags {
+            background-color: #23c0e9;
 
-        .nav {
-            font-family: var(--Montserrat);
-            margin-left: auto;
-
-            ul {
-                li {
-                    a {
-                        font-size: 14px;
-                        font-weight: 500;
-                        text-transform: capitalize;
-                        padding: 5px 0;
-
-                        b {
-                            margin-left: 5px;
-                        }
-                    }
-
-                }
+            i,
+            a,
+            p {
+                color: white;
             }
 
-            .button-function {
-                .search-button {
-
-                    .btn {
-                        background-color: var(--White);
-
-                        i {
-                            color: var(--Light-blue);
-                            font-size: 14px;
-                        }
-
-                        &:hover {
-                            background-color: var(--Light-blue);
-
-                            i {
-                                color: var(--White);
-                            }
-                        }
-
-                    }
-                }
-
-                .create-button {
-
-                    i {
-                        color: var(--White);
-                    }
-
-                    .btn {
-                        color: var(--White);
-                        background-color: var(--Bright-pink);
-                        text-transform: uppercase;
-                        font-size: 14px;
-                        font-weight: bold;
-                        padding: 12px 30px;
-                        border-radius: 10px;
-
-                        &:hover {
-                            background-color: var(--Light-red);
-                        }
-                    }
-                }
-            }
         }
     }
 
-    .banner-content {
-        width: 1200px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: var(--Montserrat);
-        color: var(--White);
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
-        .title {
-            font-size: 50px;
+    .head-item {
+        padding: 40px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            width: 115px;
+            height: 115px;
+        }
+    }
+
+    .info {
+        width: 40%;
+        font-size: 14px;
+
+        .job {
+            margin-top: 10px;
+            font-family: var(--Pops);
             font-weight: 400;
 
-            .number-offer {
+            a:hover {
+                color: var(--Sky-400);
+            }
+        }
+
+        .company {
+            margin-top: 1rem;
+
+            a {
+                font-family: var(--Yan);
+                color: var(--Sky-400);
+            }
+        }
+
+        .salary {
+            margin-top: 1rem;
+            color: var(--Red-100);
+
+            span {
+                font-family: var(--Lato);
+                color: black;
                 font-weight: 600;
             }
         }
 
-        .sub-title {
-            margin-top: 40px;
+
+
+        .location {
+            margin-top: 1rem;
             font-family: var(--Lato);
-            font-size: 20px;
-            font-weight: 400;
-        }
 
-        .content {
-            margin-top: 40px;
-            font-family: var(--Lato);
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 26px;
-            padding: 0 100px 0 0;
-        }
+            i {
+                font-size: 14px;
+                color: var(--Red-100);
+            }
 
-        .start-button {
-            margin-top: 40px;
-
-            .btn {
-                padding: 12px 30px;
-                background-color: var(--White);
-                color: var(--Bright-pink);
-
-                &:hover {
-                    background-color: var(--Light-blue);
-                    color: var(--White);
-                }
+            span {
+                font-family: var(--Lato);
+                color: black;
+                font-weight: 400;
             }
         }
     }
 
-    .search-job {
-        width: 250px;
-        height: 58px;
+    .button-function {
+        gap: 10px;
+        text-transform: uppercase;
+        font-family: var(--Lato);
         text-align: center;
+        display: flex;
+        justify-content: end;
+
+        a {
+            align-self: center;
+            color: white;
+        }
+
+        .heart-button {
+            color: var(--Red-100);
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: var(--Sky-400);
+                color: white;
+            }
+        }
+
+        .apply-position {
+            width: 60%;
+
+            .job-position {
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 8px;
+            }
+
+            .apply-button {
+                background-color: var(--Red-100);
+                color: white;
+                padding: 10px 20px;
+                border-radius: 8px;
+            }
+        }
+
+    }
+
+    .tags {
+        i {
+            color: var(--Sky-400);
+        }
+        gap: 10px;
+        padding: 20px 20px;
+        background-color: var(--Secondary-color);
+    }
+}
+
+.title {
+    font-family: var(--Mont);
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    padding: 0 0 14px;
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
         position: absolute;
         bottom: 0;
-        padding: 20px;
-        background-color: var(--White);
-
-        .title {
-            font-size: 20px;
-            font-weight: 400;
-            font-family: var(--Lato);
-            text-transform: uppercase;
-        }
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background-color: var(--Sky-400);
     }
 }
 
-.search-box {
-    width: 100%;
-    height: 240px;
-    background-color: var(--White);
-
-    .form {
-        .form-group {
-            border-bottom: 4px solid var(--Bright-pink);
-            padding: 60px;
-
-            .input {
-                select {
-                    padding: 5px 20px;
-                }
-
-                place-self: center;
-            }
-        }
-    }
-
-    .search-button {
-        background-color: var(--Bright-pink);
-        color: var(--White);
-        border-radius: 0;
-
-        i {
-            font-size: 50px;
-        }
-
-        &:hover {
-            background-color: var(--Light-blue);
-        }
-    }
+.align-left{
+    text-align: left;
 }
 
+.align-center{
+    text-align: -webkit-center;
+}

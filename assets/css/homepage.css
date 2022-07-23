@@ -1,161 +1,359 @@
-.job-list .jobs .col-6 {
+#Content .banner {
+  width: 100%;
+  position: relative;
+  background-image: url("../img/banner/banner.jpg");
+}
+#Content .banner .banner-group {
+  padding: 200px 0px 130px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#Content .banner .banner-group .banner-left {
+  font-family: var(--Mont);
+  width: 55%;
+}
+#Content .banner .banner-group .banner-left .title {
+  color: white;
+  font-size: 48px;
+  line-height: 4rem;
+}
+#Content .banner .banner-group .banner-left .title .number {
+  font-weight: bold;
+}
+#Content .banner .banner-group .banner-left .sub-title {
   margin-top: 20px;
-}
-.job-list .jobs .job-item img {
-  width: 55px;
-  height: 55px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.job-list .jobs .job-item .heart-button {
-  height: 30px;
-  width: 30px;
-}
-.job-list .jobs .job-item:hover {
-  border: 1px solid black;
-}
-
-.offer {
-  margin-top: 100px;
-  background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/banner.jpg");
-  height: 675px;
-}
-.offer h3 {
-  color: #fff;
-  font-size: 20px;
-  margin: 0 0 20px;
-  font-weight: 700;
-  padding: 0 0 14px;
-  text-transform: uppercase;
-}
-.offer .offer-item {
-  text-align: left;
-  height: 192px;
-  padding: 30px 50px;
-  color: #fff;
-}
-.offer .offer-item img {
-  padding: 0 0 10px;
-}
-.offer .offer-item .ourservice-heading {
+  color: white;
+  font-family: "Lato", sans-serif;
+  white-space: nowrap;
+  line-height: 22px;
+  letter-spacing: 0px;
   font-weight: 500;
   font-size: 20px;
-  margin: 0 0 5px;
 }
-.offer .offer-item .description {
+#Content .banner .banner-group .banner-left .text {
+  width: 70%;
+  margin-top: 30px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  color: white;
+  line-height: 26px;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-size: 16px;
+}
+#Content .banner .banner-group .banner-left .start-button {
+  margin-top: 30px;
+  background-color: white;
+  color: var(--Red-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 50px;
+  font-size: 16px;
+  gap: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+#Content .banner .banner-group .banner-left .start-button:hover {
+  background-color: var(--Sky-400);
+  color: white;
+}
+#Content .banner .banner-group .banner-right {
+  width: 45%;
+}
+#Content .search-box {
+  position: relative;
+}
+#Content .search-box .head {
+  font-family: var(--Lato);
+  position: absolute;
+  top: -50px;
+  font-size: 20px;
+  padding: 15px 50px;
+  background-color: white;
+  text-transform: uppercase;
+}
+#Content .search-box .search {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-bottom: 2px solid var(--Red-100);
+  display: flex;
+  justify-content: space-between;
+}
+#Content .search-box .search .input {
+  padding: 50px 30px 50px 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#Content .search-box .search .input input {
+  border: none;
+  outline: none;
+  width: 45%;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+}
+#Content .search-box .search .input select {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  width: 45%;
+  padding: 5px 10px 5px 10px;
+}
+#Content .search-box .search .search-button {
+  height: 100%;
+  width: 210px;
+  background-color: var(--Red-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#Content .search-box .search .search-button i {
+  font-size: 40px;
+}
+#Content .search-box .search .search-button span {
+  margin-top: 30px;
+  font-size: 16px;
+  color: var(--Secondary-color);
+}
+#Content .search-box .search .search-button:hover {
+  background-color: var(--Sky-400);
+  color: white;
+}
+#Content .tabs-jobs {
+  margin-top: 5rem;
+}
+#Content .tabs-jobs .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Content .tabs-jobs .head .tab-button ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Content .tabs-jobs .head .tab-button ul .button {
+  transition: all 0.2s ease-in-out 0s;
+  padding: 12px 27px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  background-color: white;
+  color: black;
+  border: 1px solid var(--Secondary-color);
+}
+#Content .tabs-jobs .head .tab-button ul .button:hover {
+  background-color: var(--Sky-400);
+  color: white;
+}
+#Content .tabs-jobs .head .tab-button ul .active {
+  border: var(--Sky-400) solid 1px;
+  background-color: var(--Sky-400);
+  color: white;
+}
+#Content .tabs-jobs .list-job {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#Content .offer-deals {
+  margin-top: 100px;
+  background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/banner.jpg");
+  padding: 150px 0;
+}
+#Content .offer-deals .title {
+  font-family: var(--Mont);
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  padding: 0 0 14px;
+  text-transform: uppercase;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+#Content .offer-deals .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: var(--Sky-400);
+}
+#Content .offer-deals .offers {
+  width: 100%;
+}
+#Content .offer-deals .offers .row {
+  gap: 0;
+}
+#Content .offer-deals .offers .line-bottom {
+  border-bottom: 1px solid var(--Secondary-color);
+}
+#Content .offer-deals .offers .line-left-right {
+  border-left: 1px solid var(--Secondary-color);
+  border-right: 1px solid var(--Secondary-color);
+}
+#Content .offer-deals .offers .offer-item {
+  width: 33.33%;
+  padding: 30px 40px;
+  color: white;
+}
+#Content .offer-deals .offers .offer-item i {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+#Content .offer-deals .offers .offer-item .deal-name {
+  font-size: 25px;
+  font-family: var(--Pops);
+  margin-bottom: 10px;
+}
+#Content .offer-deals .offers .offer-item .desc {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.62;
+  font-family: var(--Yan);
 }
-
-.list-company {
+#Content .offer-deals .offers .offer-item:hover {
+  background-color: white;
+}
+#Content .offer-deals .offers .offer-item:hover i,
+#Content .offer-deals .offers .offer-item:hover .deal-name,
+#Content .offer-deals .offers .offer-item:hover .desc {
+  color: var(--Red-100);
+}
+#Content .top-company {
   margin-top: 100px;
-}
-.list-company h3 {
-  font-size: 20px;
-  margin: 0 0 20px;
-  font-weight: 700;
-  padding: 0 0 14px;
-  text-transform: uppercase;
-}
-.list-company .company-item {
-  padding: 30px;
-  border: 1px solid #e6e6e6;
-  border-bottom: 2px solid var(--Light-blue);
-}
-.list-company .company-item .company-name {
-  font-size: 14px;
-  margin: 0;
-  font-weight: 500;
-}
-.list-company .company-item .company-location {
-  font-size: 14px;
-  margin-bottom: 12px;
-  color: #797979 !important;
-}
-.list-company .company-item .btn {
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out 0s;
-  font-size: 12px;
-  border: none;
-}
-.list-company .company-item:hover {
-  border-bottom: 2px solid var(--Bright-pink);
-}
-.list-company .company-item:hover .btn {
-  background-color: var(--Bright-pink);
-}
-
-.increa-number {
-  margin-top: 100px;
-  background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/office-friends.jpg");
-  height: 240px;
-}
-.increa-number h3 {
-  font-family: "Montserrat";
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 0.9;
-  word-spacing: -5px;
-  color: white;
-}
-.increa-number p {
-  color: #ffffff;
-  font-weight: 400;
-  margin: 10px 0;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-}
-
-.popular {
-  margin-top: 100px;
-}
-.popular .title h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 20px;
-  text-transform: uppercase;
-}
-.popular .category-item {
-  width: 100%;
-  height: 150px;
-  border: 1px solid #e6e6e6;
-  border-bottom: 2px solid var(--Light-blue);
-}
-.popular .category-item i {
-  font-size: 26px;
-  color: var(--Light-blue);
-}
-.popular .category-item:hover {
-  border-bottom: 2px solid var(--Bright-pink);
-}
-.popular .category-item:hover i {
-  color: var(--Bright-pink);
-}
-.popular .category-item .content-wrapper .category-title {
-  font-size: 16px;
-  margin: 0;
-  font-weight: 500;
-  transition: all 0.2s ease-in-out 0s;
-}
-.popular .category-item .content-wrapper .count {
-  color: #797979;
-  transition: all 0.2s ease-in-out 0s;
-  font-size: 14px;
-}
-
-.register {
-  margin-top: 100px;
-}
-.register .col-6 {
-  height: 580px;
-}
-.register .line-under {
+  margin-bottom: 50px;
   position: relative;
-  width: 40px;
-  height: 1px;
-  display: inline-block;
 }
-.register .content {
-  width: 300px;
+#Content .top-company .slider-for .company-info-box {
+  padding: 100px 200px;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+#Content .top-company .slider-for .company-info-box .box {
+  height: 100%;
+}
+#Content .top-company .slider-for .company-info-box a {
+  font-family: var(--Lato);
+  color: black;
+  text-decoration: none;
+}
+#Content .top-company .slider-for .company-info-box .info {
+  justify-content: center;
+}
+#Content .top-company .slider-for .company-info-box .info .company {
+  font-size: 30px;
+  font-family: var(--Pops);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#Content .top-company .slider-for .company-info-box .info .location {
+  font-size: 16px;
+  font-family: var(--Yan);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#Content .top-company .slider-for .company-info-box .info .rating {
+  font-size: 14px;
+  font-family: var(--Yan);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#Content .top-company .slider-for .company-info-box .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+#Content .top-company .slider-for .company-info-box .social a {
+  display: flex;
+  gap: 10px;
+}
+#Content .top-company .slider-for .company-info-box .social .fa-facebook-f {
+  color: #0066FF;
+}
+#Content .top-company .slider-for .company-info-box .social .fa-twitter {
+  color: #00A1FF;
+}
+#Content .top-company .slider-for .company-info-box .social .fa-instagram {
+  color: #FF0066;
+}
+#Content .top-company .slider-for .company-info-box .social .fa-linkedin-in {
+  color: #0077B5;
+}
+#Content .top-company .slider-for .company-info-box .company-desc {
+  font-size: 16px;
+  font-family: var(--Mont);
+  font-weight: 400;
+  margin-top: 20px;
+}
+#Content .top-company .slider-nav .company-item {
+  margin: 0 10px;
+  border: 1px solid var(--Gray-300);
+  border-bottom: 3px solid var(--Red-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+#Content .top-company .slider-nav .company-item:hover {
+  border: 1px solid var(--Sky-400);
+  border-bottom: 3px solid var(--Sky-400);
+}
+#Content .top-company .slider-nav .company-item .company-name {
+  font-family: var(--Pops);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#Content .top-company .slider-nav .company-item .location {
+  font-family: var(--Yan);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#Content .top-company .slider-nav .company-item .opening {
+  font-family: var(--Yan);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#Content .top-company .slider-nav .slick-next {
+  position: absolute;
+  top: -26.438rem;
+  right: 0;
+}
+#Content .top-company .slider-nav .slick-next::before {
+  color: var(--Red-100);
+}
+#Content .top-company .slider-nav .slick-prev {
+  position: absolute;
+  top: -26.438rem;
+  left: 71.563rem;
+}
+#Content .top-company .slider-nav .slick-prev::before {
+  color: var(--Red-100);
+}
+#Content .increa-number {
+  margin-top: 100px;
+  height: 240px;
+  background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/office-friends.jpg");
 }/*# sourceMappingURL=homepage.css.map */

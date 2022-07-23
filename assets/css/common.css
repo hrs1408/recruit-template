@@ -1,0 +1,84 @@
+#Header {
+  background-color: rgb(175, 175, 175);
+}
+#Header .nav-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  position: absolute;
+  top: 3%;
+  z-index: 2;
+  width: 1200px;
+}
+#Header .nav-bar .logo {
+  height: auto;
+}
+#Header .nav-bar .nav-bar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#Header .nav-bar .nav-bar-menu .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#Header .nav-bar .nav-bar-menu .nav li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 0;
+  text-transform: capitalize;
+  background: transparent;
+}
+#Header .nav-bar .nav-bar-menu .nav li a::after {
+  margin-top: 5px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease-in-out;
+}
+#Header .nav-bar .nav-bar-menu .nav li a:hover::after {
+  width: 100%;
+}
+#Header .nav-bar .nav-bar-menu .search-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#Header .nav-bar .nav-bar-menu .search-post .search {
+  width: 42px;
+  height: 42px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--Sky-400);
+  font-weight: bold;
+  border-radius: 8px;
+}
+#Header .nav-bar .nav-bar-menu .search-post .search:hover {
+  color: #ffffff;
+  background-color: var(--Sky-400);
+}
+#Header .nav-bar .nav-bar-menu .search-post .post {
+  color: white;
+  background-color: #f36969;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  width: 165px;
+  height: 50px;
+  text-transform: uppercase;
+}
+#Header .nav-bar .nav-bar-menu .search-post .post:hover {
+  background-color: #ef3a3a;
+}/*# sourceMappingURL=common.css.map */

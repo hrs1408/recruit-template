@@ -1,195 +1,432 @@
-.job-list {
-    .jobs {
-        .col-6 {
-            margin-top: 20px;
-        }
+#Content {
+    .banner {
+        width: 100%;
+        position: relative;
+        background-image: url("../img/banner/banner.jpg");
 
-        .job-item {
-            img {
-                width: 55px;
-                height: 55px;
-                object-fit: cover;
+        .banner-group {
+            padding: 200px 0px 130px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .banner-left {
+                font-family: var(--Mont);
+                width: 55%;
+
+                .title {
+                    color: white;
+                    font-size: 48px;
+                    line-height: 4rem;
+
+                    .number {
+                        font-weight: bold;
+                    }
+                }
+
+                .sub-title {
+                    margin-top: 20px;
+                    color: white;
+                    font-family: 'Lato', sans-serif;
+                    white-space: nowrap;
+                    line-height: 22px;
+                    letter-spacing: 0px;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                .text {
+                    width: 70%;
+                    margin-top: 30px;
+                    color: white;
+                    font-family: 'Lato', sans-serif;
+                    color: white;
+                    line-height: 26px;
+                    letter-spacing: 0px;
+                    font-weight: 400;
+                    font-size: 16px
+                }
+
+                .start-button {
+                    margin-top: 30px;
+                    background-color: white;
+                    color: var(--Red-100);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 165px;
+                    height: 50px;
+                    font-size: 16px;
+                    gap: 10px;
+                    border-radius: 8px;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: var(--Sky-400);
+                        color: white;
+                    }
+                }
             }
 
-            .heart-button {
-                height: 30px;
-                width: 30px;
-            }
-
-            &:hover {
-                border: 1px solid black;
+            .banner-right {
+                width: 45%;
             }
         }
     }
-}
 
-.offer {
-    margin-top: 100px;
-    background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/banner.jpg");
-    height: 675px;
+    .search-box {
+        position: relative;
 
-    h3 {
-        color: #fff;
-        font-size: 20px;
-        margin: 0 0 20px;
-        font-weight: 700;
-        padding: 0 0 14px;
-        text-transform: uppercase;
-    }
-
-    .offer-item {
-        img {
-            padding: 0 0 10px;
-        }
-
-        text-align: left;
-        height: 192px;
-        padding: 30px 50px;
-        color: #fff;
-
-        .ourservice-heading {
-            font-weight: 500;
+        .head {
+            font-family: var(--Lato);
+            position: absolute;
+            top: -50px;
             font-size: 20px;
-            margin: 0 0 5px;
-        }
-
-        .description {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.62;
-        }
-    }
-}
-
-.list-company {
-    margin-top: 100px;
-
-    h3 {
-        font-size: 20px;
-        margin: 0 0 20px;
-        font-weight: 700;
-        padding: 0 0 14px;
-        text-transform: uppercase;
-    }
-
-    .company-item {
-        padding: 30px;
-        border: 1px solid #e6e6e6;
-        border-bottom: 2px solid var(--Light-blue);
-
-        .company-name {
-            font-size: 14px;
-            margin: 0;
-            font-weight: 500;
-        }
-
-        .company-location {
-            font-size: 14px;
-            margin-bottom: 12px;
-            color: #797979 !important;
-        }
-
-        .btn {
+            padding: 15px 50px;
+            background-color: white;
             text-transform: uppercase;
-            transition: all 0.2s ease-in-out 0s;
-            font-size: 12px;
-            border: none;
         }
 
-        &:hover {
-            .btn {
-                background-color: var(--Bright-pink);
+        .search {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            border-bottom: 2px solid var(--Red-100);
+            display: flex;
+            justify-content: space-between;
+
+            .input {
+                padding: 50px 30px 50px 30px;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                input {
+                    border: none;
+                    outline: none;
+                    width: 45%;
+                    padding: 5px 10px 5px 10px;
+                    border-radius: 4px;
+                }
+
+                select {
+                    border-radius: 4px;
+                    border: none;
+                    outline: none;
+                    margin-top: 20px;
+                    width: 45%;
+                    padding: 5px 10px 5px 10px;
+                }
             }
 
-            border-bottom:2px solid var(--Bright-pink);
+            .search-button {
+                height: 100%;
+                width: 210px;
+                background-color: var(--Red-100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+
+                i {
+                    font-size: 40px;
+                }
+
+                span {
+                    margin-top: 30px;
+                    font-size: 16px;
+                    color: var(--Secondary-color);
+                }
+
+                &:hover {
+                    background-color: var(--Sky-400);
+                    color: white;
+                }
+            }
         }
     }
-}
 
-.increa-number {
-    margin-top: 100px;
-    background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/office-friends.jpg");
-    height: 240px;
+    .tabs-jobs {
+        margin-top: 5rem;
 
-    h3 {
-        font-family: "Montserrat";
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 0.9;
-        word-spacing: -5px;
-        color: white;
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+            .tab-button {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .button {
+                        transition: all 0.2s ease-in-out 0s;
+                        padding: 12px 27px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: 700;
+                        white-space: nowrap;
+                        background-color: white;
+                        color: black;
+                        border: 1px solid var(--Secondary-color);
+
+                        &:hover {
+                            background-color: var(--Sky-400);
+                            color: white;
+                        }
+                    }
+
+                    .active {
+                        border: var(--Sky-400) solid 1px;
+                        background-color: var(--Sky-400);
+                        color: white;
+                    }
+                }
+
+
+            }
+        }
+
+        .list-job {
+            margin-top: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
-    p {
-        color: #ffffff;
-        font-weight: 400;
-        margin: 10px 0;
-        font-family: "Lato", Helvetica, Arial, sans-serif;
-        font-size: 16px;
-    }
-}
+    .offer-deals {
+        margin-top: 100px;
+        background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/banner.jpg");
+        padding: 150px 0;
 
-.popular {
-    margin-top: 100px;
-
-    .title {
-        h3 {
+        .title {
+            font-family: var(--Mont);
             font-size: 20px;
             font-weight: 700;
-            margin: 0 0 20px;
+            position: relative;
+            padding: 0 0 14px;
             text-transform: uppercase;
+            margin-top: -50px;
+            margin-bottom: 50px;
+            color: white;
+            text-align: center;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50px;
+                height: 2px;
+                background-color: var(--Sky-400);
+            }
+        }
+
+        .offers {
+            width: 100%;
+
+            .row {
+                gap: 0;
+            }
+
+            .line-bottom {
+                border-bottom: 1px solid var(--Secondary-color);
+            }
+
+            .line-left-right {
+                border-left: 1px solid var(--Secondary-color);
+                border-right: 1px solid var(--Secondary-color);
+            }
+
+            .offer-item {
+                width: 33.33%;
+                padding: 30px 40px;
+                color: white;
+
+                i {
+                    font-size: 40px;
+                    padding-bottom: 10px;
+                }
+
+                .deal-name {
+                    font-size: 25px;
+                    font-family: var(--Pops);
+                    margin-bottom: 10px;
+
+                }
+
+                .desc {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.62;
+                    font-family: var(--Yan);
+                }
+
+                &:hover {
+                    background-color: white;
+
+                    i,
+                    .deal-name,
+                    .desc {
+                        color: var(--Red-100);
+                    }
+                }
+            }
+
         }
     }
 
-    .category-item {
-        i {
-            font-size: 26px;
-            color: var(--Light-blue);
-        }
-        width: 100%;
-        height: 150px;
-        border: 1px solid #e6e6e6;
-        border-bottom: 2px solid var(--Light-blue);
-
-        &:hover {
-            i {
-                color: var(--Bright-pink);
-            }
-
-            border-bottom: 2px solid var(--Bright-pink);
-        }
-
-        .content-wrapper {
-            .category-title {
-                font-size: 16px;
-                margin: 0;
-                font-weight: 500;
-                -webkit-transition: all 0.2s ease-in-out 0s;
-                -o-transition: all 0.2s ease-in-out 0s;
-                transition: all 0.2s ease-in-out 0s;
-            }
-
-            .count {
-                color: #797979;
-                transition: all 0.2s ease-in-out 0s;
-                font-size: 14px;
-            }
-        }
-    }
-}
-
-.register{
-    margin-top: 100px;
-    .col-6{
-        height: 580px;
-    }
-    .line-under {
+    .top-company {
+        margin-top: 100px;
+        margin-bottom: 50px;
         position: relative;
-        width: 40px;
-        height: 1px;
-        display: inline-block;
+
+        .slider-for {
+            .company-info-box {
+                padding: 100px 200px;
+                width: 100%;
+                height: 400px;
+                text-align: center;
+
+                .box {
+                    height: 100%;
+                }
+
+                a {
+                    font-family: var(--Lato);
+                    color: black;
+                    text-decoration: none;
+                }
+
+                .info {
+                    justify-content: center;
+
+                    .company {
+                        font-size: 30px;
+                        font-family: var(--Pops);
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+
+                    .location {
+                        font-size: 16px;
+                        font-family: var(--Yan);
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+
+                    .rating {
+                        font-size: 14px;
+                        font-family: var(--Yan);
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .social {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 20px;
+                    gap: 20px;
+                    a{
+                        display: flex;
+                        gap: 10px
+                    }
+                    .fa-facebook-f{
+                        color: #0066FF;
+                    }
+                    .fa-twitter{
+                        color: #00A1FF;
+                    }
+                    .fa-instagram{
+                        color: #FF0066;
+                    }
+                    .fa-linkedin-in{
+                        color: #0077B5;
+                    }
+                }
+
+                .company-desc {
+                    font-size: 16px;
+                    font-family: var(--Mont);
+                    font-weight: 400;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .slider-nav {
+            .company-item {
+                margin: 0 10px;
+                border: 1px solid var(--Gray-300);
+                border-bottom: 3px solid var(--Red-100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+
+                &:hover {
+                    border: 1px solid var(--Sky-400);
+                    border-bottom: 3px solid var(--Sky-400);
+                }
+
+                .company-name {
+                    font-family: var(--Pops);
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                .location {
+                    font-family: var(--Yan);
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+
+                .opening {
+                    font-family: var(--Yan);
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .slick-next {
+                position: absolute;
+                top: -26.438rem;
+                right: 0;
+
+                &::before {
+                    color: var(--Red-100);
+                }
+            }
+
+            .slick-prev {
+                position: absolute;
+                top: -26.438rem;
+                left: 71.563rem;
+
+                &::before {
+                    color: var(--Red-100);
+                }
+            }
+        }
     }
-    .content{
-        width: 300px;
+
+    .increa-number{
+        margin-top: 100px;
+        height: 240px;
+        background-image: url("https://demoapus2.com/entaro/wp-content/uploads/2019/01/office-friends.jpg");
     }
 }
