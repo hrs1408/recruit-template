@@ -77,9 +77,10 @@
     border: 1px solid var(--Gray-300);
     font-family: var(--Lato);
     background-color: white;
+    border-radius: 8px;
     &:hover {
         border: 1px solid var(--navi-blue-400);
-
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         .tags {
             background-color: var(--navi-blue-400);
 
@@ -189,7 +190,7 @@
 
         .apply-position {
             width: 60%;
-
+            justify-content: right;
             .job-position {
                 background-color: black;
                 color: white;
@@ -215,6 +216,7 @@
         gap: 10px;
         padding: 20px 20px;
         background-color: var(--Secondary-color);
+        border-radius: 0 0 7px 7px ;
     }
 }
 
