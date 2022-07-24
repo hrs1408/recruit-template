@@ -97,6 +97,7 @@
   width: 49%;
   border: 1px solid var(--Gray-300);
   font-family: var(--Lato);
+  background-color: white;
 }
 
 .job-item:hover {

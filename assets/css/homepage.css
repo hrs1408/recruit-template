@@ -1,3 +1,7 @@
+#Content {
+  background-color: #F9F9F9;
+}
+
 #Content .banner {
   width: 100%;
   position: relative;
@@ -8,7 +12,7 @@
 }
 
 #Content .banner .banner-group {
-  padding: 273px 0px 130px 0px;
+  padding: 250px 0px 130px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,9 +212,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
 }
 
 #Content .tabs-jobs .head .tab-button ul .button {
+  border-radius: 8px;
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   padding: 12px 27px;
@@ -247,7 +253,6 @@
 }
 
 #Content .offer-deals {
-  margin-top: 100px;
   padding: 150px 0;
   background-color: #f9f9f9;
 }
@@ -334,7 +339,6 @@
 }
 
 #Content .top-company {
-  margin-top: 100px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -425,6 +429,7 @@
   font-family: var(--Mont);
   font-weight: 400;
   margin-top: 20px;
+  line-height: 1.5rem;
 }
 
 #Content .top-company .slider-nav .company-item {
@@ -441,6 +446,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
+  background-color: white;
 }
 
 #Content .top-company .slider-nav .company-item:hover {
@@ -767,7 +773,8 @@
 }
 
 #Content .pricing {
-  margin-top: 100px;
+  padding-top: 100px;
+  background-color: #F9F9F9;
 }
 
 #Content .pricing .title {
