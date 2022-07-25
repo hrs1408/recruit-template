@@ -201,15 +201,6 @@
   padding: 0 0 14px;
   text-transform: uppercase;
 }
-.title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background-color: var(--navi-blue-400);
-}
 
 .align-left {
   text-align: left;
