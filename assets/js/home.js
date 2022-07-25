@@ -20,8 +20,11 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4
-      });
-          
+    });
+    $('.customer-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+    });
 });
 
 function animateNumber(finalNumber, delay, startNumber = 0, callback) {
