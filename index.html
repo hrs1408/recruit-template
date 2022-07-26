@@ -23,10 +23,65 @@
     <div id="Header">
         <div class="box">
             <div class="nav-bar">
+                <div class="side-button">
+                    <button class="clear-button" onclick="openNav()">
+                        <i class="fad fa-bars"></i>
+                    </button>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <div class="head">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="search">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <button class="accordion">Home <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Home Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Home Page 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home Page 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Category <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Category 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Category 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Category 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Contact <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Contact 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="logo">
                     <img src="./assets/img/logo/logo-white.png" alt="">
                 </div>
-                .<div class="nav-bar-menu">
+                <div class="nav-bar-menu">
                     <ul class="nav">
                         <li><a href="#">Home <i class="fad fa-chevron-down"></i></a></li>
                         <li><a href="#">Jobs <i class="fad fa-chevron-down"></i></a></li>
@@ -44,6 +99,9 @@
                         </button>
                     </div>
                 </div>
+                <a href="" class="clear-button account">
+                    <i class="fad fa-user"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -619,7 +677,7 @@
                     <p>Signed in companies are able to post new
                         job offers, searching for candidate...</p>
                 </div>
-                <a href="" class="reset-button button-register">
+                <a href="" class="clear-button button-register">
                     <i class="fad fa-plus-circle"></i> register as company
                 </a>
             </div>
@@ -632,7 +690,7 @@
                     <p>Signed in companies are able to post new
                         job offers, searching for candidate...</p>
                 </div>
-                <a href="" class="reset-button button-register">
+                <a href="" class="clear-button button-register">
                     <i class="fad fa-plus-circle"></i> register candidate
                 </a>
             </div>
@@ -899,7 +957,7 @@
                             <i class="fad fa-briefcase"></i> CEO Facebook
                         </div>
                     </div>
-                    <a href="" class="reset-button view">
+                    <a href="" class="clear-button view">
                         view profile
                     </a>
                 </div>
@@ -916,7 +974,7 @@
                             <i class="fad fa-briefcase"></i> CEO Facebook
                         </div>
                     </div>
-                    <a href="" class="reset-button view">
+                    <a href="" class="clear-button view">
                         view profile
                     </a>
                 </div>
@@ -933,7 +991,7 @@
                             <i class="fad fa-briefcase"></i> CEO Facebook
                         </div>
                     </div>
-                    <a href="" class="reset-button view">
+                    <a href="" class="clear-button view">
                         view profile
                     </a>
                 </div>
@@ -950,19 +1008,22 @@
                             <i class="fad fa-briefcase"></i> CEO Facebook
                         </div>
                     </div>
-                    <a href="" class="reset-button view">
+                    <a href="" class="clear-button view">
                         view profile
                     </a>
                 </div>
             </div>
             <div class="view-all">
-                <a href="" class="reset-button view">
+                <a href="" class="clear-button view">
                     View All
                 </a>
             </div>
         </div>
         <div class="customer-rate">
             <div class="box">
+                <div class="title">
+                    <h4>RECENT RESUMES</h4>
+                </div>
                 <div class="customer-slider">
                     <div class="rating-item">
                         <div class="avatar">
@@ -1129,7 +1190,7 @@
                             <p>10 Days Duration</p>
                             <p>Email Alert</p>
                             <div class="button">
-                                <a href="" class="reset-button add-to-cart">
+                                <a href="" class="clear-button add-to-cart">
                                     add to cart
                                 </a>
                             </div>
@@ -1149,7 +1210,7 @@
                             <p>10 Days Duration</p>
                             <p>Email Alert</p>
                             <div class="button">
-                                <a href="" class="reset-button add-to-cart">
+                                <a href="" class="clear-button add-to-cart">
                                     add to cart
                                 </a>
                             </div>
@@ -1169,7 +1230,7 @@
                             <p>10 Days Duration</p>
                             <p>Email Alert</p>
                             <div class="button">
-                                <a href="" class="reset-button add-to-cart">
+                                <a href="" class="clear-button add-to-cart">
                                     add to cart
                                 </a>
                             </div>
@@ -1186,7 +1247,7 @@
                 </div>
                 <form action="">
                     <input type="email" class="email" placeholder="Enter your email...">
-                    <button class="reset-button">
+                    <button class="clear-button">
                         <i class="fad fa-plus-circle"></i> SUBMIT
                     </button>
                 </form>
@@ -1205,7 +1266,7 @@
                             Donec id elit non mi porta graat eget metus. Akshay id elit non Vestibulum id ligula .
                         </p>
                     </div>
-                    <a href="" class="reset-button button">
+                    <a href="" class="clear-button button">
                         Read Article <i class="fad fa-arrow-right"></i>
                     </a>
 

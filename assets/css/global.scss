@@ -78,9 +78,11 @@
     font-family: var(--Lato);
     background-color: white;
     border-radius: 8px;
+
     &:hover {
         border: 1px solid var(--navi-blue-400);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
         .tags {
             background-color: var(--navi-blue-400);
 
@@ -182,6 +184,7 @@
             height: 32px;
             border-radius: 4px;
             border: 1px solid var(--navi-blue-200);
+
             &:hover {
                 background-color: var(--navi-blue-400);
                 color: white;
@@ -191,6 +194,7 @@
         .apply-position {
             width: 60%;
             justify-content: right;
+
             .job-position {
                 background-color: black;
                 color: white;
@@ -216,7 +220,7 @@
         gap: 10px;
         padding: 20px 20px;
         background-color: var(--Secondary-color);
-        border-radius: 0 0 7px 7px ;
+        border-radius: 0 0 7px 7px;
     }
 }
 
@@ -237,4 +241,66 @@
     text-align: -webkit-center;
 }
 
- 
+
+@media only screen and (max-width: 600px) {
+    .box {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+    .job-item {
+        margin-top: 1rem;
+        width: 100%;
+        .head-item {
+            padding: 20px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 120px;
+                height: auto;
+            }
+        }
+    
+        .info {
+            width: 70%;
+        }
+    
+        .button-function {
+            margin-top: 10px;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            
+            .apply-position {
+                width: 85%;
+                justify-content: right;
+                display: flex;
+            }
+    
+        }
+    
+        .tags {
+            i {
+                color: var(--navi-blue-400);
+            }
+    
+            gap: 10px;
+            padding: 20px 20px;
+            background-color: var(--Secondary-color);
+            border-radius: 0 0 7px 7px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .box {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 1200px) {}

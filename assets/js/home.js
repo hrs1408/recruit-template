@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -15,11 +29,29 @@ $(document).ready(function () {
         centerMode: true,
         focusOnSelect: true,
         autoplay: false,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
     });
     $('.multiple-items').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
     });
     $('.customer-slider').slick({
         autoplay: true,
@@ -62,3 +94,13 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('Company').innerText = formattedNumber
     })
 })
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}

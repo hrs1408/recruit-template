@@ -10,6 +10,97 @@
   z-index: 2;
   width: 1200px;
 }
+#Header .nav-bar .side-button button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+#Header .nav-bar .side-button button i {
+  font-size: 24px;
+}
+#Header .nav-bar .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+#Header .nav-bar .sidenav .head {
+  padding: 10px 0;
+  background-color: var(--navi-blue-200);
+}
+#Header .nav-bar .sidenav .search {
+  width: 100%;
+  padding: 8px;
+}
+#Header .nav-bar .sidenav .search input {
+  border-radius: 5px;
+  width: 80%;
+  padding: 10px 10px 10px 32px;
+  border: 1px solid #ddd;
+}
+#Header .nav-bar .sidenav a {
+  padding: 5px 12px 12px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: var(--muli);
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+#Header .nav-bar .sidenav a:hover {
+  color: var(--navi-blue-400);
+}
+#Header .nav-bar .sidenav .closebtn {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+#Header .nav-bar .sidenav .accordion {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size: 18px;
+  font-family: var(--Lato);
+  color: black;
+  border-bottom: 1px solid var(--Gray-300);
+}
+#Header .nav-bar .sidenav .active,
+#Header .nav-bar .sidenav .accordion:hover {
+  color: var(--navi-blue-200);
+}
+#Header .nav-bar .sidenav .panel {
+  padding: 10px 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+#Header .nav-bar .sidenav .panel ul li a {
+  color: black;
+  font-size: 15px;
+  font-family: var(--Lato);
+  text-decoration: none;
+}
+#Header .nav-bar .sidenav .panel ul li a:hover {
+  color: var(--navi-blue-200);
+}
 #Header .nav-bar .logo {
   height: auto;
 }
@@ -81,6 +172,12 @@
 }
 #Header .nav-bar .nav-bar-menu .search-post .post:hover {
   background-color: var(--navi-blue-400);
+}
+#Header .nav-bar .account {
+  color: white;
+}
+#Header .nav-bar .account i {
+  font-size: 20px;
 }
 
 #Footer {
@@ -191,4 +288,71 @@
   width: 1px;
   height: 20px;
   background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #Header {
+    width: 100%;
+  }
+  #Header .nav-bar {
+    width: 90%;
+    place-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Header .nav-bar .nav-bar-menu {
+    display: none;
+  }
+  #Footer .footer-head {
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+  #Footer .footer-head .contact {
+    width: 100%;
+  }
+  #Footer .footer-head .contact .desc {
+    margin-top: 20px;
+  }
+  #Footer .footer-head .contact .button {
+    margin-top: 20px;
+  }
+  #Footer .footer-head .employee {
+    margin-top: 40px;
+    width: 50%;
+    padding: 0px;
+  }
+  #Footer .footer-head .candidate {
+    margin-top: 40px;
+    width: 50%;
+    padding: 0px;
+  }
+  #Footer .footer-head .contact-us {
+    width: 100%;
+    padding: 0px;
+    margin-top: 40px;
+  }
+  #Footer .footer-head .items {
+    margin-top: 20px;
+  }
+  #Footer .coppyright {
+    padding: 20px 0;
+    display: block;
+  }
+  #Footer .coppyright .display-flex-1 {
+    display: block;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+  #Footer .coppyright .display-flex-1 .policy {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Footer .coppyright .display-flex-1 .policy a {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=common.css.map */
