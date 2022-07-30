@@ -355,7 +355,45 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
+    #Header {
+        width: 100%;
+
+        .nav-bar {
+            width: 97%;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #Header {
+        width: 100%;
+
+        .nav-bar {
+            width: 96%;
+            place-content: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .side-button {
+                display: block;
+            }
+
+            .account {
+                display: block;
+            }
+
+            .nav-bar-menu {
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
     #Header {
         width: 100%;
 
@@ -400,18 +438,112 @@
 
             .employee {
                 margin-top: 40px;
-                width: 50%;
+                width: 33%;
                 padding: 0px;
             }
 
             .candidate {
                 margin-top: 40px;
-                width: 50%;
+                width: 33%;
                 padding: 0px;
             }
 
             .contact-us {
+                width: 33%;
+                padding: 0px;
+                margin-top: 40px;
+
+            }
+
+            .items {
+                margin-top: 20px;
+            }
+        }
+
+        .coppyright {
+            padding: 20px 0;
+
+            .display-flex-1 {
+                display: block;
+                align-items: center;
+                gap: 1rem;
+                justify-content: center;
+                text-align: center;
+
+                .policy {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #Header {
+        width: 100%;
+
+        .nav-bar {
+            width: 90% !important;
+            place-content: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .side-button {
+                display: block;
+            }
+
+            .account {
+                display: block;
+            }
+
+            .nav-bar-menu {
+                display: none;
+            }
+
+        }
+    }
+
+    #Footer {
+        .footer-head {
+            padding-top: 20px;
+            flex-wrap: wrap;
+
+            .contact {
                 width: 100%;
+
+                .desc {
+                    margin-top: 20px;
+                }
+
+                .button {
+                    margin-top: 20px;
+                }
+            }
+
+            .employee {
+                margin-top: 40px;
+                width: 50% !important;
+                padding: 0px;
+            }
+
+            .candidate {
+                margin-top: 40px;
+                width: 50% !important;
+                padding: 0px;
+            }
+
+            .contact-us {
+                width: 100% !important;
                 padding: 0px;
                 margin-top: 40px;
 
@@ -448,30 +580,4 @@
 
         }
     }
-}
-
-
-@media only screen and (max-width: 768px) {
-    
-}
-
-@media only screen and (max-width: 992px) {
-    #Header {
-        .nav-bar {
-            .side-button {
-                display: block;
-            }
-            .nav-bar-menu{
-                display: none;
-            }
-
-            .account {
-                display: block;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    
 }
