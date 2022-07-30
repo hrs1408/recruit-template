@@ -25,6 +25,7 @@
             }
         }
 
+        
         .sidenav {
             height: 100%;
             width: 0;
@@ -144,7 +145,8 @@
                 gap: 2rem;
 
                 li {
-                    a {
+                    position: relative;
+                    .nav-item {
                         text-decoration: none;
                         color: white;
                         font-family: 'Montserrat', sans-serif;
@@ -167,6 +169,48 @@
                         &:hover {
                             &::after {
                                 width: 100%;
+                            }
+                          
+                        }
+                    }
+
+                    &:hover{
+                        .dropdown{
+                            display: flex;
+                        }
+                    }
+
+                    .dropdown{
+                        width: 170px;
+                        display: none;
+                        background-color: var(--navi-blue-200);
+                        border-radius: 8px;
+                        border: 1px solid var(--navi-blue-400);
+                        height: auto;
+                        position: absolute;
+                        right: 0;
+                        padding: 20px;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        .drop-item{
+                            color: white;
+                            height: auto;
+                            text-decoration: none;
+                            font-size: 14px;
+                            font-family: var(--Mont);
+                            &::after {
+                                margin-top: 4px;
+                                content: '';
+                                display: block;
+                                width: 0;
+                                height: 2px;
+                                background: white;
+                                transition: width 0.3s ease-in-out;
+                            }
+                            &:hover {
+                                &::after {
+                                    width: 100%;
+                                }
                             }
                         }
                     }

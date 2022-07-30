@@ -4,17 +4,15 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all 0.1s ease-in-out;
+  box-sizing: border-box;
   transition: all 0.1s ease-in-out;
 }
 
 :root {
   --Mont: "Montserrat", sans-serif;
-  --Lato: 'Lato';
-  --Pops: 'Poppins';
-  --Yan: 'Yantramanav';
+  --Lato: "Lato";
+  --Pops: "Poppins";
+  --Yan: "Yantramanav";
   --White: #ffffff;
   --Secondary-color: #f5f5f5;
   --Gray-300: #e5e5e5;
@@ -32,7 +30,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
@@ -41,51 +38,31 @@
 }
 
 .display-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
 .display-flex-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 1rem;
 }
 
 .display-flex-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .justify-content-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .justify-content-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .width-100 {
@@ -100,116 +77,85 @@
   background-color: white;
   border-radius: 8px;
 }
-
 .job-item:hover {
   border: 1px solid var(--navi-blue-400);
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
 .job-item:hover .tags {
   background-color: var(--navi-blue-400);
 }
-
 .job-item:hover .tags i,
 .job-item:hover .tags a,
 .job-item:hover .tags p {
   color: white;
 }
-
 .job-item a {
   text-decoration: none;
   color: black;
 }
-
 .job-item .head-item {
   padding: 40px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 .job-item .head-item img {
   width: 115px;
   height: 115px;
 }
-
 .job-item .info {
   width: 40%;
   font-size: 14px;
 }
-
 .job-item .info .job {
   margin-top: 10px;
   font-family: var(--Pops);
   font-weight: 400;
 }
-
 .job-item .info .job a:hover {
   color: var(--navi-blue-400);
 }
-
 .job-item .info .company {
   margin-top: 1rem;
 }
-
 .job-item .info .company a {
   font-family: var(--Yan);
   color: var(--navi-blue-400);
 }
-
 .job-item .info .salary {
   margin-top: 1rem;
   color: var(--navi-blue-200);
 }
-
 .job-item .info .salary span {
   font-family: var(--Lato);
   color: black;
   font-weight: 600;
 }
-
 .job-item .info .location {
   margin-top: 1rem;
   font-family: var(--Lato);
 }
-
 .job-item .info .location i {
   font-size: 14px;
   color: var(--navi-blue-200);
 }
-
 .job-item .info .location span {
   font-family: var(--Lato);
   color: black;
   font-weight: 400;
 }
-
 .job-item .button-function {
   gap: 10px;
   text-transform: uppercase;
   font-family: var(--Lato);
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
-
 .job-item .button-function a {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   color: white;
 }
-
 .job-item .button-function .heart-button {
   color: var(--navi-blue-200);
   width: 32px;
@@ -217,40 +163,32 @@
   border-radius: 4px;
   border: 1px solid var(--navi-blue-200);
 }
-
 .job-item .button-function .heart-button:hover {
   background-color: var(--navi-blue-400);
   color: white;
 }
-
 .job-item .button-function .apply-position {
   width: 60%;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
 }
-
 .job-item .button-function .apply-position .job-position {
   background-color: black;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
 }
-
 .job-item .button-function .apply-position .apply-button {
   background-color: var(--navi-blue-200);
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
 }
-
 .job-item .tags {
   gap: 10px;
   padding: 20px 20px;
   background-color: var(--Secondary-color);
   border-radius: 0 0 7px 7px;
 }
-
 .job-item .tags i {
   color: var(--navi-blue-400);
 }
@@ -278,14 +216,12 @@
     max-width: 100%;
   }
 }
-
 @media only screen and (max-width: 1200px) {
   .box {
     padding: 0 20px;
     max-width: 100%;
   }
 }
-
 @media only screen and (max-width: 992px) {
   .box {
     padding: 0 20px;
@@ -293,17 +229,10 @@
   }
   .job-item .head-item {
     padding: 20px 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
   }
   .job-item .head-item img {
@@ -316,20 +245,12 @@
   .job-item .button-function {
     margin-top: 10px;
     gap: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .job-item .button-function .apply-position {
     width: 85%;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    justify-content: right;
     display: flex;
   }
   .job-item .tags {
@@ -342,7 +263,6 @@
     color: var(--navi-blue-400);
   }
 }
-
 @media only screen and (max-width: 768px) {
   .box {
     padding: 0 20px;
@@ -351,17 +271,10 @@
   .job-item .head-item {
     text-align: center;
     padding: 20px 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   .job-item .head-item img {
     width: 120px;
@@ -376,20 +289,12 @@
   .job-item .button-function {
     margin-top: 10px;
     gap: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .job-item .button-function .apply-position {
     width: 85%;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    justify-content: right;
     display: flex;
   }
   .job-item .tags {
@@ -402,7 +307,6 @@
     color: var(--navi-blue-400);
   }
 }
-
 @media only screen and (max-width: 600px) {
   .box {
     padding: 0 20px;
@@ -416,17 +320,10 @@
     text-align: left !important;
     gap: 0 !important;
     padding: 20px 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   .job-item .head-item img {
     width: 120px;
@@ -441,20 +338,12 @@
   .job-item .button-function {
     margin-top: 10px;
     gap: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .job-item .button-function .apply-position {
     width: 85%;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    justify-content: right;
     display: flex;
   }
   .job-item .tags {
@@ -466,5 +355,4 @@
   .job-item .tags i {
     color: var(--navi-blue-400);
   }
-}
-/*# sourceMappingURL=global.css.map */
+}/*# sourceMappingURL=global.css.map */
