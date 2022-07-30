@@ -355,6 +355,20 @@
     }
 }
 
+@media only screen and (max-width: 1366px) {
+    #Header {
+        width: 100%;
+
+        .nav-bar {
+            width: 97%;
+            justify-content: space-between;
+        }
+    }
+    #Footer {
+        padding: 0 20px;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     #Header {
         width: 100%;
@@ -363,6 +377,10 @@
             width: 97%;
             justify-content: space-around;
         }
+    }
+
+    #Footer {
+        padding: 0 20px;
     }
 }
 

@@ -1163,6 +1163,15 @@
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1366px) {
+  #Content .banner {
+    padding: 0 20px;
+  }
+  #Content .newsletter {
+    padding: 0 20px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   #Content .banner {
     padding: 0 20px;
@@ -1242,7 +1251,9 @@
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    gap: 5px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
   }
   #Content .offer-deals {
     padding: 100px 0;
@@ -1403,7 +1414,6 @@
   }
   #Content .popular-category .slick-prev {
     top: -4rem;
-    left: 24rem;
   }
   #Content .register-banner {
     -ms-flex-wrap: wrap;
@@ -1454,7 +1464,6 @@
   }
   #Content .top-company .slider-nav .slick-prev {
     top: -17rem;
-    left: 24rem;
   }
   #Content .top-company .slider-nav .slick-next {
     top: -17rem;
@@ -1521,6 +1530,18 @@
   #Content .newsletter .content form {
     margin: 20px 40px;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #Content .top-company .slider-for {
+    display: none;
+  }
+  #Content .top-company .slider-nav .slick-prev {
+    top: -2rem;
+  }
+  #Content .top-company .slider-nav .slick-next {
+    top: -2rem;
   }
 }
 /*# sourceMappingURL=homepage.css.map */
