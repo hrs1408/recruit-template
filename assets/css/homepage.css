@@ -496,7 +496,7 @@
 }
 #Content .customer-rate .rating-item {
   padding: 60px 60px;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   gap: 30px;
