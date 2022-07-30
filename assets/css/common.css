@@ -2,6 +2,7 @@
   background-color: rgb(175, 175, 175);
 }
 #Header .nav-bar {
+  width: 100%;
   display: flex;
   gap: 10px;
   justify-content: space-between;
@@ -9,6 +10,9 @@
   top: 3%;
   z-index: 2;
   width: 1200px;
+}
+#Header .nav-bar .side-button {
+  display: none;
 }
 #Header .nav-bar .side-button button {
   background-color: transparent;
@@ -174,6 +178,7 @@
   background-color: var(--navi-blue-400);
 }
 #Header .nav-bar .account {
+  display: none;
   color: white;
 }
 #Header .nav-bar .account i {
@@ -301,6 +306,12 @@
     justify-content: space-between;
     align-items: center;
   }
+  #Header .nav-bar .side-button {
+    display: block;
+  }
+  #Header .nav-bar .account {
+    display: block;
+  }
   #Header .nav-bar .nav-bar-menu {
     display: none;
   }
@@ -354,5 +365,16 @@
   }
   #Footer .coppyright .display-flex-1 .policy a {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #Header .nav-bar .side-button {
+    display: block;
+  }
+  #Header .nav-bar .nav-bar-menu {
+    display: none;
+  }
+  #Header .nav-bar .account {
+    display: block;
   }
 }/*# sourceMappingURL=common.css.map */

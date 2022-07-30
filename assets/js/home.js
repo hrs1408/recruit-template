@@ -31,7 +31,7 @@ $(document).ready(function () {
         autoplay: false,
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 601,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -45,7 +45,7 @@ $(document).ready(function () {
         slidesToScroll: 4,
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 601,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

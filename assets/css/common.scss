@@ -1,6 +1,8 @@
 #Header {
     background-color: rgb(175, 175, 175);
+
     .nav-bar {
+        width: 100%;
         display: flex;
         gap: 10px;
         justify-content: space-between;
@@ -10,6 +12,8 @@
         width: 1200px;
 
         .side-button {
+            display: none;
+
             button {
                 background-color: transparent;
                 border: none;
@@ -100,7 +104,7 @@
             }
 
             .panel {
-                
+
                 padding: 10px 18px;
                 display: none;
                 background-color: white;
@@ -211,6 +215,7 @@
         }
 
         .account {
+            display: none;
             color: white;
 
             i {
@@ -353,12 +358,21 @@
 @media only screen and (max-width: 600px) {
     #Header {
         width: 100%;
+
         .nav-bar {
             width: 90%;
             place-content: center;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            .side-button {
+                display: block;
+            }
+
+            .account {
+                display: block;
+            }
 
             .nav-bar-menu {
                 display: none;
@@ -411,32 +425,53 @@
         .coppyright {
             padding: 20px 0;
             display: block;
+
             .display-flex-1 {
                 display: block;
                 align-items: center;
                 gap: 1rem;
                 justify-content: center;
                 text-align: center;
+
                 .policy {
                     margin-top: 10px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    a{
+
+                    a {
                         font-size: 16px;
                     }
                 }
             }
-            
-            
+
+
         }
     }
 }
 
-@media only screen and (max-width: 600px) {}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    
+}
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    #Header {
+        .nav-bar {
+            .side-button {
+                display: block;
+            }
+            .nav-bar-menu{
+                display: none;
+            }
 
-@media only screen and (max-width: 1200px) {}
+            .account {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    
+}
