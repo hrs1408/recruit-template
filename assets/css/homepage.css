@@ -625,6 +625,10 @@
   padding: 60px 0;
 }
 
+#Content .customer-rate .box {
+  padding: 0 50px;
+}
+
 #Content .customer-rate .title {
   text-align: center;
   color: white;
