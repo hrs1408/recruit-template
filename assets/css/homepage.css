@@ -71,6 +71,8 @@
   width: 45%;
 }
 #Content .banner .banner-group .banner-right img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 #Content .search-box {
@@ -253,6 +255,9 @@
   margin-bottom: 50px;
   position: relative;
 }
+#Content .top-company .slider-for .slick-slide > div {
+  margin: 0 10px;
+}
 #Content .top-company .slider-for .company-info-box {
   padding: 100px 200px;
   width: 100%;
@@ -269,6 +274,13 @@
 }
 #Content .top-company .slider-for .company-info-box .info {
   justify-content: center;
+}
+#Content .top-company .slider-for .company-info-box .info img {
+  width: 105px;
+  height: 105px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 #Content .top-company .slider-for .company-info-box .info .company {
   font-size: 30px;
@@ -298,6 +310,7 @@
 #Content .top-company .slider-for .company-info-box .social a {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 #Content .top-company .slider-for .company-info-box .social .fa-facebook-f {
   color: #0066FF;
@@ -318,6 +331,9 @@
   margin-top: 20px;
   line-height: 1.5rem;
 }
+#Content .top-company .slider-nav .slick-slide > div {
+  margin: 0 10px;
+}
 #Content .top-company .slider-nav .company-item {
   border-radius: 8px;
   margin: 0 10px;
@@ -332,6 +348,13 @@
 #Content .top-company .slider-nav .company-item:hover {
   border: 1px solid var(--navi-blue-400);
   border-bottom: 3px solid var(--navi-blue-400);
+}
+#Content .top-company .slider-nav .company-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #Content .top-company .slider-nav .company-item .company-name {
   font-family: var(--Pops);
@@ -465,6 +488,9 @@
   text-align: center;
   color: white;
 }
+#Content .customer-rate .customer-slider .slick-slide > div {
+  margin: 0 10px;
+}
 #Content .customer-rate .checked {
   color: orange;
 }
@@ -559,6 +585,9 @@
 #Content .popular-category .multiple-items {
   position: relative;
   margin-top: 40px;
+}
+#Content .popular-category .multiple-items .slick-slide > div {
+  margin: 0 10px;
 }
 #Content .popular-category .multiple-items .category-item {
   background-color: white;

@@ -78,7 +78,6 @@
     font-family: var(--Lato);
     background-color: white;
     border-radius: 8px;
-
     &:hover {
         border: 1px solid var(--navi-blue-400);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -103,24 +102,28 @@
     .head-item {
         padding: 40px 20px;
         display: flex;
-        justify-content: space-around;
+        gap: 10px;
+        justify-content: space-between;
         align-items: center;
 
         img {
+            border-radius: 8px;
+            object-fit: cover;
             width: 115px;
             height: 115px;
         }
     }
 
     .info {
-        width: 40%;
         font-size: 14px;
-
+        width: 40%;
         .job {
             margin-top: 10px;
             font-family: var(--Pops);
             font-weight: 400;
-
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             a:hover {
                 color: var(--navi-blue-400);
             }
@@ -128,10 +131,13 @@
 
         .company {
             margin-top: 1rem;
-
+            overflow: hidden;
+            text-overflow: ellipsis;
             a {
                 font-family: var(--Yan);
                 color: var(--navi-blue-400);
+               
+                white-space: nowrap;
             }
         }
 
@@ -147,7 +153,6 @@
         }
 
 
-
         .location {
             margin-top: 1rem;
             font-family: var(--Lato);
@@ -161,51 +166,54 @@
                 font-family: var(--Lato);
                 color: black;
                 font-weight: 400;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
         }
     }
 
     .button-function {
-        gap: 10px;
+        width: 37%;
+        height: 100%;
         text-transform: uppercase;
         font-family: var(--Lato);
-        text-align: center;
         display: flex;
-        justify-content: end;
-
+        justify-content: flex-end;
+        gap: 10px   ;
         a {
             align-self: center;
             color: white;
         }
-
-        .heart-button {
-            color: var(--navi-blue-200);
-            width: 32px;
-            height: 32px;
-            border-radius: 4px;
-            border: 1px solid var(--navi-blue-200);
-
-            &:hover {
-                background-color: var(--navi-blue-400);
-                color: white;
+        .favorite{
+            .heart-button {
+                color: var(--navi-blue-200);
+                width: 32px;
+                height: 32px;
+                border-radius: 4px;
+                border: 1px solid var(--navi-blue-200);
+                &:hover {
+                    background-color: var(--navi-blue-400);
+                    color: white;
+                }
             }
         }
+        
 
         .apply-position {
-            width: 60%;
             justify-content: right;
-
+            height: auto;
             .job-position {
                 background-color: black;
                 color: white;
-                padding: 10px 20px;
+                padding: 10px 10px;
                 border-radius: 8px;
             }
 
             .apply-button {
                 background-color: var(--navi-blue-200);
                 color: white;
-                padding: 10px 20px;
+                padding: 10px 10px;
                 border-radius: 8px;
             }
         }
@@ -216,11 +224,14 @@
         i {
             color: var(--navi-blue-400);
         }
-
+        width: 100%;
         gap: 10px;
         padding: 20px 20px;
         background-color: var(--Secondary-color);
         border-radius: 0 0 7px 7px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
@@ -247,19 +258,14 @@
         max-width: 100%;
     }
 }
-    
+
 @media only screen and (max-width: 1200px) {
     .box {
         padding: 0 20px;
         max-width: 100%;
     }
-}
-@media only screen and (max-width: 992px) {
-    .box {
-        padding: 0 20px;
-        max-width: 100%;
-    }
-    .job-item{
+
+    .job-item {
         .head-item {
             padding: 20px 10px;
             display: flex;
@@ -267,34 +273,49 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
+
             img {
                 width: 120px;
                 height: auto;
             }
         }
-    
+
         .info {
             width: 70%;
         }
-    
+
         .button-function {
             margin-top: 10px;
             gap: 10px;
             display: flex;
             justify-content: center;
+            width: 100%;
+
             .apply-position {
-                width: 85%;
                 justify-content: right;
                 display: flex;
+                .job-position {
+                    background-color: black;
+                    color: white;
+                    padding: 10px 10px;
+                    border-radius: 8px;
+                }
+    
+                .apply-button {
+                    background-color: var(--navi-blue-200);
+                    color: white;
+                    padding: 10px 10px;
+                    border-radius: 8px;
+                }
             }
-    
+
         }
-    
+
         .tags {
             i {
                 color: var(--navi-blue-400);
             }
-    
+
             gap: 10px;
             padding: 20px 20px;
             background-color: var(--Secondary-color);
@@ -302,12 +323,66 @@
         }
     }
 }
+
+@media only screen and (max-width: 992px) {
+    .box {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .job-item {
+        .head-item {
+            padding: 20px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            img {
+                width: 120px;
+                height: auto;
+            }
+        }
+
+        .info {
+            width: 70%;
+        }
+
+        .button-function {
+            margin-top: 10px;
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .apply-position {
+                justify-content: right;
+                display: flex;
+            }
+
+        }
+
+        .tags {
+            i {
+                color: var(--navi-blue-400);
+            }
+
+            gap: 10px;
+            padding: 20px 20px;
+            background-color: var(--Secondary-color);
+            border-radius: 0 0 7px 7px;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .box {
         padding: 0 20px;
         max-width: 100%;
     }
-    .job-item{
+
+    .job-item {
         .head-item {
             text-align: center;
             padding: 20px 10px;
@@ -315,39 +390,40 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+
             img {
                 width: 120px;
                 height: auto;
             }
         }
-    
+
         .info {
             width: 70%;
-            .salary, .location {
+
+            .salary,
+            .location {
                 place-content: center;
             }
 
         }
-    
+
         .button-function {
             margin-top: 10px;
             gap: 10px;
             display: flex;
             justify-content: center;
-            
+
             .apply-position {
-                width: 85%;
                 justify-content: right;
                 display: flex;
             }
-    
+
         }
-    
+
         .tags {
             i {
                 color: var(--navi-blue-400);
             }
-    
             gap: 10px;
             padding: 20px 20px;
             background-color: var(--Secondary-color);
@@ -355,59 +431,59 @@
         }
     }
 }
-
-
-
 
 @media only screen and (max-width: 600px) {
     .box {
         padding: 0 20px;
         max-width: 100%;
     }
+
     .job-item {
         margin-top: 1rem;
         width: 100%;
-        
+
         .head-item {
             text-align: left !important;
             gap: 0 !important;
             padding: 20px 10px;
             display: flex;
-            flex-wrap: wrap ;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+
             img {
-                width: 120px ;
+                width: 120px;
                 height: auto;
             }
         }
-    
+
         .info {
-            width: 70% ;
-            .salary, .location{
+            width: 70%;
+
+            .salary,
+            .location {
                 place-content: flex-start !important;
             }
         }
-    
+
         .button-function {
             margin-top: 10px;
             gap: 10px;
             display: flex;
             justify-content: center;
-            
+
             .apply-position {
-                width: 85%;
                 justify-content: right;
                 display: flex;
             }
-    
+
         }
-    
+
         .tags {
             i {
                 color: var(--navi-blue-400);
             }
-    
+
             gap: 10px;
             padding: 20px 20px;
             background-color: var(--Secondary-color);
@@ -415,5 +491,3 @@
         }
     }
 }
-
-
