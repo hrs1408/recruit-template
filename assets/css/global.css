@@ -383,7 +383,6 @@
   }
   .job-item .head-item {
     text-align: left !important;
-    gap: 0 !important;
     padding: 20px 10px;
     display: flex;
     flex-wrap: wrap;

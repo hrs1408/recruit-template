@@ -19,7 +19,6 @@
     --Gray-300: #e5e5e5;
     --navi-blue-200: #184A7E;
     --navi-blue-400: #0F3264;
-
 }
 
 .box {
@@ -78,6 +77,7 @@
     font-family: var(--Lato);
     background-color: white;
     border-radius: 8px;
+
     &:hover {
         border: 1px solid var(--navi-blue-400);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -117,6 +117,7 @@
     .info {
         font-size: 14px;
         width: 40%;
+
         .job {
             margin-top: 10px;
             font-family: var(--Pops);
@@ -124,6 +125,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+
             a:hover {
                 color: var(--navi-blue-400);
             }
@@ -133,10 +135,11 @@
             margin-top: 1rem;
             overflow: hidden;
             text-overflow: ellipsis;
+
             a {
                 font-family: var(--Yan);
                 color: var(--navi-blue-400);
-               
+
                 white-space: nowrap;
             }
         }
@@ -180,29 +183,33 @@
         font-family: var(--Lato);
         display: flex;
         justify-content: flex-end;
-        gap: 10px   ;
+        gap: 10px;
+
         a {
             align-self: center;
             color: white;
         }
-        .favorite{
+
+        .favorite {
             .heart-button {
                 color: var(--navi-blue-200);
                 width: 32px;
                 height: 32px;
                 border-radius: 4px;
                 border: 1px solid var(--navi-blue-200);
+
                 &:hover {
                     background-color: var(--navi-blue-400);
                     color: white;
                 }
             }
         }
-        
+
 
         .apply-position {
             justify-content: right;
             height: auto;
+
             .job-position {
                 background-color: black;
                 color: white;
@@ -224,6 +231,7 @@
         i {
             color: var(--navi-blue-400);
         }
+
         width: 100%;
         gap: 10px;
         padding: 20px 20px;
@@ -294,13 +302,14 @@
             .apply-position {
                 justify-content: right;
                 display: flex;
+
                 .job-position {
                     background-color: black;
                     color: white;
                     padding: 10px 10px;
                     border-radius: 8px;
                 }
-    
+
                 .apply-button {
                     background-color: var(--navi-blue-200);
                     color: white;
@@ -424,6 +433,7 @@
             i {
                 color: var(--navi-blue-400);
             }
+
             gap: 10px;
             padding: 20px 20px;
             background-color: var(--Secondary-color);
@@ -444,7 +454,6 @@
 
         .head-item {
             text-align: left !important;
-            gap: 0 !important;
             padding: 20px 10px;
             display: flex;
             flex-wrap: wrap;

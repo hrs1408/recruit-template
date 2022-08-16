@@ -1194,10 +1194,16 @@
   }
   #Content .customer-rate .rating-item {
     padding: 20px;
-    align-items: flex-start;
+    display: block !important;
+    text-align: -webkit-center;
+  }
+  #Content .customer-rate .rating-item .avatar {
+    margin-bottom: 10px;
+    text-align: -wetkit-center;
   }
   #Content .customer-rate .rating-item .content .info {
     flex-wrap: wrap;
+    gap: 10px;
   }
   #Content .pricing {
     padding: 20px 0;
