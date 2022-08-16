@@ -287,19 +287,17 @@
             width: 50%;
             display: flex;
             gap: 20px;
-            
+
             .email {
                 border: none;
                 border-radius: 8px;
                 outline: none;
                 width: 100%;
                 padding: 5px 10px 5px 10px;
-                border-radius: 8px;
             }
 
             button {
                 border: none;
-                border-radius: 8px;
                 outline: none;
                 width: 150px;
                 padding: 12px 20px;
@@ -321,6 +319,9 @@
     .box {
         padding: 0 20px;
         max-width: 100%;
+    }
+    .newsletter {
+        padding: 0 20px;
     }
 }
 
@@ -440,6 +441,9 @@
             border-radius: 0 0 7px 7px;
         }
     }
+    .newsletter {
+        padding: 0 20px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -497,6 +501,23 @@
             border-radius: 0 0 7px 7px;
         }
     }
+
+    .newsletter {
+        padding: 0 20px;
+
+        .title-newsletter {
+            p {
+                font-size: 24px;
+            }
+        }
+        form{
+            button{
+                padding: 5px 10px;
+            }
+        }
+    }
+
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -554,6 +575,30 @@
             padding: 20px 20px;
             background-color: var(--Secondary-color);
             border-radius: 0 0 7px 7px;
+        }
+    }
+
+    .newsletter {
+        .content {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px 0;
+
+            .title-newsletter {
+                justify-content: center;
+                width: 100%;
+                font-size: 30px;
+                line-height: 1.25;
+                font-weight: 400;
+            }
+
+            form {
+                button{
+                    padding: 5px 10px ;
+                }
+                margin: 20px 40px;
+                width: 100%;
+            }
         }
     }
 }

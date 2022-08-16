@@ -261,11 +261,9 @@
   outline: none;
   width: 100%;
   padding: 5px 10px 5px 10px;
-  border-radius: 8px;
 }
 .newsletter .content form button {
   border: none;
-  border-radius: 8px;
   outline: none;
   width: 150px;
   padding: 12px 20px;
@@ -284,6 +282,9 @@
   .box {
     padding: 0 20px;
     max-width: 100%;
+  }
+  .newsletter {
+    padding: 0 20px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -379,6 +380,9 @@
   .job-item .tags i {
     color: var(--navi-blue-400);
   }
+  .newsletter {
+    padding: 0 20px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .box {
@@ -422,6 +426,15 @@
   }
   .job-item .tags i {
     color: var(--navi-blue-400);
+  }
+  .newsletter {
+    padding: 0 20px;
+  }
+  .newsletter .title-newsletter p {
+    font-size: 24px;
+  }
+  .newsletter form button {
+    padding: 5px 10px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -470,5 +483,24 @@
   }
   .job-item .tags i {
     color: var(--navi-blue-400);
+  }
+  .newsletter .content {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .newsletter .content .title-newsletter {
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: 400;
+  }
+  .newsletter .content form {
+    margin: 20px 40px;
+    width: 100%;
+  }
+  .newsletter .content form button {
+    padding: 5px 10px;
   }
 }/*# sourceMappingURL=global.css.map */

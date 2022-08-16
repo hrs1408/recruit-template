@@ -839,9 +839,6 @@
   #Content .banner {
     padding: 0 20px;
   }
-  #Content .newsletter {
-    padding: 0 20px;
-  }
 }
 @media only screen and (max-width: 1200px) {
   #Content .banner {
@@ -876,9 +873,6 @@
   }
   #Content .customer-rate .box {
     padding: 0 50px;
-  }
-  #Content .newsletter {
-    padding: 0 20px;
   }
   #Content .resumes .resume-item {
     gap: 10px;
@@ -962,12 +956,6 @@
   #Content .pricing {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  #Content .newsletter {
-    padding: 0 20px;
-  }
-  #Content .newsletter .title-newsletter p {
-    font-size: 24px;
   }
   #Content .increa-number {
     height: auto;
@@ -1163,22 +1151,6 @@
   #Content .pricing .plan .plan-item {
     width: 100%;
     margin: 10px 0;
-  }
-  #Content .newsletter .content {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px 0;
-  }
-  #Content .newsletter .content .title-newsletter {
-    justify-content: center;
-    width: 100%;
-    font-size: 30px;
-    line-height: 1.25;
-    font-weight: 400;
-  }
-  #Content .newsletter .content form {
-    margin: 20px 40px;
-    width: 100%;
   }
 }
 @media only screen and (max-width: 415px) {

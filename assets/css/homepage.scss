@@ -1020,10 +1020,6 @@
         .banner {
             padding: 0 20px;
         }
-
-        .newsletter {
-            padding: 0 20px;
-        }
     }
 }
 
@@ -1082,9 +1078,7 @@
             }
         }
 
-        .newsletter {
-            padding: 0 20px;
-        }
+        
 
         .resumes {
             .resume-item {
@@ -1215,15 +1209,7 @@
             padding-bottom: 50px;
         }
 
-        .newsletter {
-            padding: 0 20px;
-
-            .title-newsletter {
-                p {
-                    font-size: 24px;
-                }
-            }
-        }
+       
 
         .increa-number {
             height: auto;
@@ -1496,26 +1482,7 @@
             }
         }
 
-        .newsletter {
-            .content {
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 20px 0;
-
-                .title-newsletter {
-                    justify-content: center;
-                    width: 100%;
-                    font-size: 30px;
-                    line-height: 1.25;
-                    font-weight: 400;
-                }
-
-                form {
-                    margin: 20px 40px;
-                    width: 100%;
-                }
-            }
-        }
+        
     }
 }
 
