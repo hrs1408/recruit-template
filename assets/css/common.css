@@ -1,5 +1,7 @@
 #Header {
   background-color: rgb(175, 175, 175);
+  width: 100%;
+  height: auto;
 }
 #Header .nav-bar {
   display: flex;

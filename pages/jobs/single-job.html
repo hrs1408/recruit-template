@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruit</title>
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/list-job.css">
+    <link rel="stylesheet" href="../../assets/css/single-job.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <div id="Header">
+        <div class="box">
+            <div class="nav-bar">
+                <div class="side-button">
+                    <button class="clear-button" onclick="openNav()">
+                        <i class="fad fa-bars"></i>
+                    </button>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <div class="head">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="search">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <button class="accordion">Home <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="/">Home Page</a>
+                            </li>
+                            <li>
+                                <a href="/">Home Page 2</a>
+                            </li>
+                            <li>
+                                <a href="/">Home Page 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Category <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="/">Category 1</a>
+                            </li>
+                            <li>
+                                <a href="/">Category 2</a>
+                            </li>
+                            <li>
+                                <a href="/">Category 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Contact <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="/">Contact 1</a>
+                            </li>
+                            <li>
+                                <a href="/">Contact 2</a>
+                            </li>
+                            <li>
+                                <a href="/">Contact 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="../../assets/img/logo/logo-white.png" alt="">
+                </div>
+                <div class="nav-bar-menu">
+                    <ul class="nav">
+                        <li>
+                            <a href="#" class="nav-item">Home <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Jobs <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Jobs</a>
+                                <a href="#" class="drop-item">Job Favorite</a>
+                                <a href="#" class="drop-item">Post a Job</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Candidates <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Candidates</a>
+                                <a href="#" class="drop-item">Candidate Favorite</a>
+                                <a href="#" class="drop-item">Post a Candidate</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Employers <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Company</a>
+                                <a href="#" class="drop-item">Company Details</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Blog <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Blog list</a>
+                                <a href="#" class="drop-item">Top Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Contact Us <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search-post">
+                        <button class="search clear-button">
+                            <i class="fad fa-search"></i>
+                        </button>
+                        <button class="post clear-button">
+                            <i class="fad fa-plus-circle"></i> <span>post a job</span>
+                        </button>
+                    </div>
+                </div>
+                <a href="/" class="clear-button account">
+                    <i class="fad fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="Content">
+        <div class="breadcrumb">
+            <div class="box">
+                <h2 class="job-title">Senior Health And Food</h2>
+                <ul class="display-flex-1 link">
+                    <li>
+                        <a href="/">Home</a><i class="fad fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="/">Jobs</a><i class="fad fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="/">Senior Health And Food</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="box">
+                <div class="job-details">
+                    <div class="content-item">
+                        <p class="title">
+                            DESCTIPION
+                        </p>
+                        <div class="paragraph">
+                            Google is and always will be an engineering company. We hire people with a broad set of ical
+                            skills who are ready to tackle some of technology’s greatest challenges and make an impact
+                            on millions, if not billions, of users. At Google, engineers not only revolutionize search,
+                            they routinely work on massive scalability and storage solutions, large-scale applications
+                            and rely new platforms for developers around the world. From AdWords to Chrome, Android to
+                            Ye, Social to Local, Google engineers are changing the world.
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <p class="title">
+                            RESPONSIBILITIES
+                        </p>
+                        <div class="paragraph">
+                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet
+                            elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec,
+                            egestas non nisi. Curabitur aliquet quam id dui posuere blandit.
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <p class="title">
+                            MINIMUM QUALIFICATIONS
+                        </p>
+                        <div class="paragraph">
+                            <ul class="list-second">
+                                <li><i class="fad fa-arrow-right"></i> BA/BS degree in a technical field or equivalent
+                                    practical experience.</li>
+                                <li><i class="fad fa-arrow-right"></i> 2 years of relevant work experience in software
+                                    development.</li>
+                                <li><i class="fad fa-arrow-right"></i> Programming experience in C, C++ or Java.</li>
+                                <li><i class="fad fa-arrow-right"></i> Experience with AJAX, HTML and CSS.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <p class="title">
+                            HOW TO APPLY
+                        </p>
+                        <div class="paragraph">
+                            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet
+                            quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Curabitur non
+                            nulla sit amet nisl tempus convallis quis ac lectus.
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <p class="title">
+                            VIDEO
+                        </p>
+                        <div class="paragraph">
+                            <video controls >
+                                <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <p class="title">
+                            LOCATION
+                        </p>
+                        <div class="paragraph">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.3536848246927!2d107.58582911534614!3d16.457619233282355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a14771646be3%3A0x2fd0ad0d9227d5b0!2zNzAgTmd1eeG7hW4gSHXhu4csIFbEqW5oIE5pbmgsIFRow6BuaCBwaOG7kSBIdeG6vywgVGjhu6thIFRoacOqbiBIdeG6vywgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1660828930784!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <p class="title">Share:</p>
+                        <ul class="list-social">
+                            <li>
+                                <a href="/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tags display-flex-1">
+                        <i class="fad fa-tags"></i>
+                        <p>Tagged as: </p>
+                        <div class="tag-item">
+                            <a href="">
+                                tag 1
+                            </a>
+                        </div>
+                        <div class="tag-item">
+                            <a href="">
+                                tag 2
+                            </a>
+                        </div>
+                        <div class="tag-item">
+                            <a href="">
+                                tag 3
+                            </a>
+                        </div>
+                        <div class="tag-item">
+                            <a href="">
+                                tag 3
+                            </a>
+                        </div>
+                        <div class="tag-item">
+                            <a href="">
+                                tag 3
+                            </a>
+                        </div>
+                        <div class="tag-item">
+                            <a href="">
+                                tag 3
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-overview">
+                    <div class="head">
+                        <p>Job Overview</p>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <img src="https://demoapus2.com/entaro/wp-content/uploads/2017/12/c3.jpg" alt=""
+                                class="logo">
+                            <p class="name-job">
+                                Pay Walt
+                            </p>
+                            <p class="company-name">
+                                Pay Technology Ltd.
+                            </p>
+                            <div class="function">
+                                <button class="heart">
+                                    <i class="fad fa-heart"></i>
+                                </button>
+                                <div class="job-type">
+                                    <a href="/">Freelance</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-view">
+                            <div class="item">
+                                <p class="title">
+                                    <i class="fad fa-calendar"></i>Dated Posted:
+                                </p>
+                                <p class="value">
+                                    Posted 5 years ago
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="title">
+                                    <i class="fad fa-paper-plane"></i>Location:
+                                </p>
+                                <p class="value">
+                                    Grand Central Pkwy Hollis NY 11003 USA
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="title">
+                                    <i class="fad fa-info"></i>Title:
+                                </p>
+                                <p class="value">
+                                    Senior Health and Food
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="title">
+                                    <i class="fad fa-money-bill"></i>Salary:
+                                </p>
+                                <p class="value">
+                                    $30k - $35k
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="title">
+                                    <i class="fad fa-game-board-alt"></i>Category:
+                                </p>
+                                <p class="value">
+                                    Medical
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="title">
+                                    <i class="fad fa-star"></i>Experience:
+                                </p>
+                                <p class="value">
+                                    1+ Years Experience
+                                </p>
+                            </div>
+                        </div>
+                        <div class="apply">
+                            <button href="/" class="apply-button">
+                                apply now!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <div class="box content">
+                <div class="title-newsletter">
+                    <i class="fad fa-envelope"></i>
+                    <p>Sign In To Our Newsletter</p>
+                </div>
+                <form action="">
+                    <input type="email" class="email" placeholder="Enter your email...">
+                    <button class="clear-button">
+                        <i class="fad fa-plus-circle"></i> SUBMIT
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="Footer">
+        <div class="box">
+            <div class="footer-head">
+                <div class="contact">
+                    <div class="logo">
+                        <img src="../../assets/img/logo/logo-white.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>
+                            Donec id elit non mi porta graat eget metus. Akshay id elit non Vestibulum id ligula .
+                        </p>
+                    </div>
+                    <a href="/" class="clear-button button">
+                        Read Article <i class="fad fa-arrow-right"></i>
+                    </a>
+
+                    <div class="social-group">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube-square"></i>
+                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-google-plus-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="candidate">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href="/"><i class="fad fa-map-marker-alt"></i>
+                                <p>7007 Riverside Dr Redding, CA 96001 USA</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-phone-alt"></i>
+                                <p>Call us +49 1234 5678 9</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-envelope"></i>
+                                <p>example@gmail.com</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-clock"></i>
+                                <p> Mon-Sat: 8:00am - 7:00pm</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coppyright">
+                <div class="display-flex-1 justify-content-between width-100">
+                    <p>© Copyright 2018 by <a href="/">Entaro</a>. All Rights Reserved.</p>
+                    <div class="policy">
+                        <a href="/">Terms of Use</a>
+                        <div class="vertical-line"></div>
+                        <a href="/">Privacy Policy</a>
+                        <div class="vertical-line"></div>
+                        <a href="/">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
