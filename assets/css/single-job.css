@@ -31,9 +31,10 @@
   color: var(--navi-blue-200);
   margin-right: 10px;
 }
-#Content .main-content .box .job-details .content-item .paragraph video {
+#Content .main-content .box .job-details .content-item .paragraph .video {
   border-radius: 10px;
   width: 100%;
+  height: 415px;
 }
 #Content .main-content .box .job-details .social {
   margin-top: 40px;
