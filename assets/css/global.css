@@ -295,6 +295,7 @@
 }
 .breadcrumb .link li {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .breadcrumb .link li i {
