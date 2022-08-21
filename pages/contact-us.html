@@ -6,11 +6,357 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruit</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
 </head>
 
 <body>
-  
+    <div id="Header">
+        <div class="box">
+            <div class="nav-bar">
+                <div class="side-button">
+                    <button class="clear-button" onclick="openNav()">
+                        <i class="fad fa-bars"></i>
+                    </button>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <div class="head">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="search">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <button class="accordion">Home <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Home Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Home Page 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home Page 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Category <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Category 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Category 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Category 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Contact <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Contact 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="../../assets/img/logo/logo-white.png" alt="">
+                </div>
+                <div class="nav-bar-menu">
+                    <ul class="nav">
+                        <li>
+                            <a href="#" class="nav-item">Home <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Jobs <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Jobs</a>
+                                <a href="#" class="drop-item">Job Favorite</a>
+                                <a href="#" class="drop-item">Post a Job</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Candidates <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Candidates</a>
+                                <a href="#" class="drop-item">Candidate Favorite</a>
+                                <a href="#" class="drop-item">Post a Candidate</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Employers <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Company</a>
+                                <a href="#" class="drop-item">Company Details</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Blog <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Blog list</a>
+                                <a href="#" class="drop-item">Top Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Contact Us <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search-post">
+                        <button class="search clear-button">
+                            <i class="fad fa-search"></i>
+                        </button>
+                        <button class="post clear-button">
+                            <i class="fad fa-plus-circle"></i> <span>post a job</span>
+                        </button>
+                    </div>
+                </div>
+                <a href="" class="clear-button account">
+                    <i class="fad fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="Content">
+        <div class="breadcrumb">
+            <div class="box">
+                <h2 class="job-title">Contact Us</h2>
+                <ul class="display-flex-1 link">
+                    <li>
+                        <a href="/">Home</a><i class="fad fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="/">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="support box">
+            <h2>Our Helpline 24/7 Available</h2>
+            <h1>
+                Call us at <a href="tel:+0123 125 1457">+0123 125 1457</a> or Email us at <a
+                    href="mailto: support@site.com">support@site.com</a>
+            </h1>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.3536848246927!2d107.58582911534614!3d16.457619233282355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a14771646be3%3A0x2fd0ad0d9227d5b0!2zNzAgTmd1eeG7hW4gSHXhu4csIFbEqW5oIE5pbmgsIFRow6BuaCBwaOG7kSBIdeG6vywgVGjhu6thIFRoacOqbiBIdeG6vywgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1661064612828!5m2!1sen!2s"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="message box">
+            <div class="title">
+                <h2>Send us a message</h2>
+            </div>
+            <div class="message-box">
+                <div class="box-left">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name">
+                            <p>
+                                <i class="fad fa-user"></i>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Email">
+                            <p>
+                                <i class="fad fa-envelope"></i>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                            <p>
+                                <i class="fad fa-edit"></i>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" rows="5">
+                                Enter your message....
+                            </textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="button-submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="box-right">
+                    <div class="title">
+                        <h2>Contact Info</h2>
+                    </div>
+                    <div class="item">
+                        <i class="fad fa-map"></i>
+                        <p> 110, B Kalani Bag Dewas #455001 MP India</p>
+                    </div>
+                    <div class="item">
+                        <i class="fad fa-envelope"></i>
+                        <p> jobpro@exaple.com</p>
+                    </div>
+                    <div class="item">
+                        <i class="fad fa-phone-alt"></i>
+                        <p>+61 3 8376 6284</p>
+                    </div>
+                    <div class="item">
+                        <i class="fad fa-fax"></i>
+                        <p>+25 3 8376 6284</p>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <div class="box content">
+                <div class="title-newsletter">
+                    <i class="fad fa-envelope"></i>
+                    <p>Sign In To Our Newsletter</p>
+                </div>
+                <form action="">
+                    <input type="email" class="email" placeholder="Enter your email...">
+                    <button class="clear-button">
+                        <i class="fad fa-plus-circle"></i> SUBMIT
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="Footer">
+        <div class="box">
+            <div class="footer-head">
+                <div class="contact">
+                    <div class="logo">
+                        <img src="../../assets/img/logo/logo-white.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>
+                            Donec id elit non mi porta graat eget metus. Akshay id elit non Vestibulum id ligula .
+                        </p>
+                    </div>
+                    <a href="" class="clear-button button">
+                        Read Article <i class="fad fa-arrow-right"></i>
+                    </a>
+
+                    <div class="social-group">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube-square"></i>
+                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-google-plus-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="candidate">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href=""><i class="fad fa-map-marker-alt"></i>
+                                <p>7007 Riverside Dr Redding, CA 96001 USA</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-phone-alt"></i>
+                                <p>Call us +49 1234 5678 9</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-envelope"></i>
+                                <p>example@gmail.com</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-clock"></i>
+                                <p> Mon-Sat: 8:00am - 7:00pm</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coppyright">
+                <div class="display-flex-1 justify-content-between width-100">
+                    <p>© Copyright 2018 by <a href="">Entaro</a>. All Rights Reserved.</p>
+                    <div class="policy">
+                        <a href="">Terms of Use</a>
+                        <div class="vertical-line"></div>
+                        <a href="">Privacy Policy</a>
+                        <div class="vertical-line"></div>
+                        <a href="">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

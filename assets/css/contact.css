@@ -1,0 +1,191 @@
+#Header {
+  background-color: var(--navi-blue-200);
+  height: 110px;
+  border-bottom: 2px solid var(--line-cl);
+}
+#Header .nav-bar-menu .search-post .post {
+  background: white !important;
+  color: var(--navi-blue-200) !important;
+}
+
+#Content .support {
+  padding: 50px 0;
+  text-align: center;
+}
+#Content .support h2 {
+  font-size: 23px;
+  font-weight: 700;
+  font-family: var(--Mont);
+}
+#Content .support h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: var(--navi-blue-200);
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#Content .support h1 {
+  margin-top: 45px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: var(--Mont);
+  margin-bottom: 10px;
+}
+#Content .support h1 a {
+  color: var(--navi-blue-200);
+  text-decoration: none;
+}
+#Content .support h1 a:hover {
+  color: var(--navi-blue-400);
+}
+#Content .map iframe {
+  width: 100%;
+}
+#Content .message {
+  padding: 50px 0;
+}
+#Content .message .title h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--navi-blue-200);
+  margin-top: 10px;
+  position: absolute;
+}
+#Content .message .message-box {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+}
+#Content .message .message-box .box-left {
+  width: 68%;
+  padding: 30px;
+  background-color: white;
+  border: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#Content .message .message-box .box-left form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+#Content .message .message-box .box-left form .form-group input {
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  padding: 10px 10px 10px 30px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--Mont);
+  color: var(--navi-blue-200);
+}
+#Content .message .message-box .box-left form .form-group p {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: var(--navi-blue-200);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--Mont);
+}
+#Content .message .message-box .box-left form .form-group textarea {
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--Mont);
+  color: var(--navi-blue-200);
+  outline: none;
+}
+#Content .message .message-box .box-left form .form-group .button-submit {
+  background-color: var(--navi-blue-200);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--Mont);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#Content .message .message-box .box-left form .form-group .button-submit:hover {
+  background-color: var(--navi-blue-400);
+}
+#Content .message .message-box .box-right {
+  margin-left: auto;
+  width: 30%;
+  padding: 50px;
+  background-color: var(--navi-blue-200);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#Content .message .message-box .box-right .title h2 {
+  color: white;
+}
+#Content .message .message-box .box-right .item {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 16px;
+}
+#Content .message .message-box .box-right .item i {
+  width: 20px;
+}
+#Content .message .message-box .box-right .item p {
+  font-family: var(--Mont);
+  letter-spacing: 0.5px;
+}
+#Content .message .message-box .box-right .social {
+  margin-top: 50px;
+}
+#Content .message .message-box .box-right .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Content .message .message-box .box-right .social ul li a {
+  color: white;
+}
+#Content .message .message-box .box-right .social ul li:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1366px) {
+  #Content .message {
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #Content .support h2 {
+    font-size: 16px;
+  }
+  #Content .support h1 {
+    margin-top: 45px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #Content .message .message-box {
+    display: block;
+  }
+  #Content .message .message-box .box-left {
+    width: 100%;
+  }
+  #Content .message .message-box .box-right {
+    margin-top: 20px;
+    width: 100%;
+  }
+  #Content .message .message-box .box-right .social ul {
+    justify-content: start;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=contact.css.map */
