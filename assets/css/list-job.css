@@ -100,62 +100,6 @@
   background-color: #F9F9F9;
   display: flex;
 }
-#Content .main-content .side-bar {
-  width: 18%;
-}
-#Content .main-content .side-bar .filter {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-#Content .main-content .side-bar .filter .title {
-  font-size: 14px;
-  font-family: var(--Mont);
-  padding: 15px;
-  padding-left: 20px;
-  background-color: var(--navi-blue-200);
-  color: white;
-  border-radius: 4px 4px 0 0;
-}
-#Content .main-content .side-bar .filter .list {
-  background-color: white;
-  padding: 20px;
-  border-bottom: 2px solid var(--navi-blue-200);
-}
-#Content .main-content .side-bar .filter .list .form-group {
-  display: flex;
-  gap: 10px;
-  font-family: var(--Mont);
-  font-size: 14px;
-  padding: 5px 0;
-}
-#Content .main-content .side-bar .filter .list .form-group label {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-#Content .main-content .side-bar .filter .list .form-group span {
-  font-weight: 400;
-  font-family: var(--Lato);
-}
-#Content .main-content .side-bar .filter .list .view {
-  padding: 10px 0;
-}
-#Content .main-content .side-bar .filter .list .view .view-more {
-  font-size: 14px;
-  font-family: var(--Mont);
-  padding: 15px 0;
-  text-align: center;
-  color: var(--navi-blue-200);
-  text-decoration: none;
-}
-#Content .main-content .side-bar .filter .list .view .view-more:hover {
-  color: var(--navi-blue-400);
-}
-#Content .main-content .side-bar .banner img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 #Content .main-content .job-box {
   margin-left: auto;
   width: 80%;
@@ -244,9 +188,6 @@
   #Content .search-jobs .trending-key {
     display: none;
   }
-  #Content .main-content .side-bar {
-    width: 30%;
-  }
   #Content .main-content .job-box {
     width: 65%;
   }
@@ -292,10 +233,6 @@
   #Content .search-jobs .trending-key {
     display: none;
   }
-  #Content .main-content .side-bar {
-    display: none;
-    width: 100%;
-  }
   #Content .main-content .job-box {
     width: 100%;
   }
@@ -340,10 +277,6 @@
   }
   #Content .search-jobs .trending-key {
     display: none;
-  }
-  #Content .main-content .side-bar {
-    display: none;
-    width: 100%;
   }
   #Content .main-content .job-box {
     width: 100%;

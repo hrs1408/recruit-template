@@ -6,11 +6,676 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruit</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/company-details.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
 </head>
 
 <body>
-  
+    <div id="Header">
+        <div class="box">
+            <div class="nav-bar">
+                <div class="side-button">
+                    <button class="clear-button" onclick="openNav()">
+                        <i class="fad fa-bars"></i>
+                    </button>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <div class="head">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="search">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <button class="accordion">Home <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="/">Home Page</a>
+                            </li>
+                            <li>
+                                <a href="/">Home Page 2</a>
+                            </li>
+                            <li>
+                                <a href="/">Home Page 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Category <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="/">Category 1</a>
+                            </li>
+                            <li>
+                                <a href="/">Category 2</a>
+                            </li>
+                            <li>
+                                <a href="/">Category 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Contact <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="/">Contact 1</a>
+                            </li>
+                            <li>
+                                <a href="/">Contact 2</a>
+                            </li>
+                            <li>
+                                <a href="/">Contact 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="../../assets/img/logo/logo-white.png" alt="">
+                </div>
+                <div class="nav-bar-menu">
+                    <ul class="nav">
+                        <li>
+                            <a href="#" class="nav-item">Home <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Jobs <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Jobs</a>
+                                <a href="#" class="drop-item">Job Favorite</a>
+                                <a href="#" class="drop-item">Post a Job</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Candidates <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Candidates</a>
+                                <a href="#" class="drop-item">Candidate Favorite</a>
+                                <a href="#" class="drop-item">Post a Candidate</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Employers <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Company</a>
+                                <a href="#" class="drop-item">Company Details</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Blog <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Blog list</a>
+                                <a href="#" class="drop-item">Top Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Contact Us <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search-post">
+                        <button class="search clear-button">
+                            <i class="fad fa-search"></i>
+                        </button>
+                        <button class="post clear-button">
+                            <i class="fad fa-plus-circle"></i> <span>post a job</span>
+                        </button>
+                    </div>
+                </div>
+                <a href="/" class="clear-button account">
+                    <i class="fad fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="Content">
+        <div class="breadcrumb">
+            <div class="box">
+                <h2 class="job-title">Senior Health And Food</h2>
+                <ul class="display-flex-1 link">
+                    <li>
+                        <a href="/">Home</a><i class="fad fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="/">List Company</a><i class="fad fa-angle-right"></i>
+                    </li>
+                    <li>
+                        <a href="/">Recruit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box main-content">
+            <div class="side-bar">
+                <div class="filter">
+                    <div class="title">
+                        <h2>Jobs By Category</h2>
+                    </div>
+                    <div class="list">
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox4">
+                            <label for="checkbox4">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox5">
+                            <label for="checkbox5">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox6">
+                            <label for="checkbox6">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="view">
+                            <a href="/" class="view-more">
+                                View More <i class="fad fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="title">
+                        <h2>Jobs By Category</h2>
+                    </div>
+                    <div class="list">
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox4">
+                            <label for="checkbox4">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox5">
+                            <label for="checkbox5">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox6">
+                            <label for="checkbox6">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="view">
+                            <a href="/" class="view-more">
+                                View More <i class="fad fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="title">
+                        <h2>Jobs By Category</h2>
+                    </div>
+                    <div class="list">
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox4">
+                            <label for="checkbox4">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox5">
+                            <label for="checkbox5">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="checkbox6">
+                            <label for="checkbox6">Web Developer</label> <span>(1)</span>
+                        </div>
+                        <div class="view">
+                            <a href="/" class="view-more">
+                                View More <i class="fad fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <a href="/"><img src="https://demoapus2.com/entaro/wp-content/uploads/2017/12/Add-Section.jpg"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="company-box">
+                <div class="company-info">
+                    <div class="head">
+                        <div class="logo">
+                            <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/01104813/1268-768x591.png"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <p class="short-name">
+                                Recruit
+                            </p>
+                            <p class="full-name">
+                                Recruit Technology Ltd.
+                            </p>
+                            <p class="address">
+                                <i class="fad fa-map-marker-alt"></i>
+                                <span>12 Lane No 5 Jain Nagar Delhi, 110039</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="icon-link">
+                            <p>SHARE: </p>
+                            <ul>
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="link">
+                            <div class="social-item">
+                                <a href="/">
+                                    <i class="fas fa-link"></i>
+                                    <span>https://recruit.com.vn</span>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="/">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span>Recruit</span>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="/">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span>Recruit</span>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="/">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Recruit</span>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="/">
+                                    <i class="fab fa-google-plus-g"></i>
+                                    <span>Recruit</span>
+                                </a>
+                            </div>
+                            <div class="social-item">
+                                <a href="/">
+                                    <i class="fab fa-pinterest-p"></i>
+                                    <span>Recruit</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-intro">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                    <p class="paragraph">
+                        Donec vel libero ullamcorper, faucibus augue auctor, imperdiet diam. Duis quis nibh eget urna
+                        convallis blandit. Fusce iaculis purus vitae convallis aliquet. Ut auctor nunc sed odio bibendum
+                        fringilla. Quisque egestas non magna ac tincidunt. Aenean laoreet commodo nulla, sed ultrices
+                        odio vehicula sit amet.
+                    </p>
+                </div>
+                <div class="list-job">
+                    <div class="job-item">
+                        <div class="head-item">
+                            <img src="https://demoapus2.com/entaro/wp-content/uploads/2017/12/c3.jpg" alt="">
+                            <div class="info">
+                                <div class="job">
+                                    <a href="/">Senior Health and Food Food Food Footh and Food Food Food Food </a>
+                                </div>
+                                <div class="company">
+                                    <a href="/">Company Name Name Name Name Name</a>
+                                </div>
+                                <div class="salary display-flex-1">
+                                    <i class="far fa-money-bill"></i><span> $100 - $200</span>
+                                </div>
+                                <div class="location display-flex-1">
+                                    <i class="fas fa-map-marker-alt"></i><span>New York New York New York New York
+                                        Time</span>
+                                </div>
+                            </div>
+                            <div class="button-function ">
+                                <div class="favorite">
+                                    <button class="heart-button clear-button">
+                                        <i class="fad fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="display-wrap apply-position">
+                                    <a href="/" class="clear-button job-position">
+                                        freelancer
+                                    </a>
+
+                                    <a href="/" class="clear-button apply-button">
+                                        apply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tags display-flex-1">
+                            <i class="fad fa-tags"></i>
+                            <p>Tagged as: </p>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 1
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 2
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-item">
+                        <div class="head-item">
+                            <img src="https://demoapus2.com/entaro/wp-content/uploads/2017/12/c3.jpg" alt="">
+                            <div class="info">
+                                <div class="job">
+                                    <a href="/">Senior Health and Food Food Food Footh and Food Food Food Food </a>
+                                </div>
+                                <div class="company">
+                                    <a href="/">Company Name Name Name Name Name</a>
+                                </div>
+                                <div class="salary display-flex-1">
+                                    <i class="far fa-money-bill"></i><span> $100 - $200</span>
+                                </div>
+                                <div class="location display-flex-1">
+                                    <i class="fas fa-map-marker-alt"></i><span>New York New York New York New York
+                                        Time</span>
+                                </div>
+                            </div>
+                            <div class="button-function ">
+                                <div class="favorite">
+                                    <button class="heart-button clear-button">
+                                        <i class="fad fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="display-wrap apply-position">
+                                    <a href="/" class="clear-button job-position">
+                                        freelancer
+                                    </a>
+
+                                    <a href="/" class="clear-button apply-button">
+                                        apply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tags display-flex-1">
+                            <i class="fad fa-tags"></i>
+                            <p>Tagged as: </p>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 1
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 2
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-item">
+                        <div class="head-item">
+                            <img src="https://demoapus2.com/entaro/wp-content/uploads/2017/12/c3.jpg" alt="">
+                            <div class="info">
+                                <div class="job">
+                                    <a href="/">Senior Health and Food Food Food Footh and Food Food Food Food </a>
+                                </div>
+                                <div class="company">
+                                    <a href="/">Company Name Name Name Name Name</a>
+                                </div>
+                                <div class="salary display-flex-1">
+                                    <i class="far fa-money-bill"></i><span> $100 - $200</span>
+                                </div>
+                                <div class="location display-flex-1">
+                                    <i class="fas fa-map-marker-alt"></i><span>New York New York New York New York
+                                        Time</span>
+                                </div>
+                            </div>
+                            <div class="button-function ">
+                                <div class="favorite">
+                                    <button class="heart-button clear-button">
+                                        <i class="fad fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="display-wrap apply-position">
+                                    <a href="/" class="clear-button job-position">
+                                        freelancer
+                                    </a>
+
+                                    <a href="/" class="clear-button apply-button">
+                                        apply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tags display-flex-1">
+                            <i class="fad fa-tags"></i>
+                            <p>Tagged as: </p>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 1
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 2
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                            <div class="tag-item">
+                                <a href="/">
+                                    tag 3
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Footer">
+        <div class="box">
+            <div class="footer-head">
+                <div class="contact">
+                    <div class="logo">
+                        <img src="../../assets/img/logo/logo-white.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>
+                            Donec id elit non mi porta graat eget metus. Akshay id elit non Vestibulum id ligula .
+                        </p>
+                    </div>
+                    <a href="/" class="clear-button button">
+                        Read Article <i class="fad fa-arrow-right"></i>
+                    </a>
+
+                    <div class="social-group">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube-square"></i>
+                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-google-plus-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="candidate">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href="/"><i class="fad fa-map-marker-alt"></i>
+                                <p>7007 Riverside Dr Redding, CA 96001 USA</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-phone-alt"></i>
+                                <p>Call us +49 1234 5678 9</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-envelope"></i>
+                                <p>example@gmail.com</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-clock"></i>
+                                <p> Mon-Sat: 8:00am - 7:00pm</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coppyright">
+                <div class="display-flex-1 justify-content-between width-100">
+                    <p>© Copyright 2018 by <a href="/">Entaro</a>. All Rights Reserved.</p>
+                    <div class="policy">
+                        <a href="/">Terms of Use</a>
+                        <div class="vertical-line"></div>
+                        <a href="/">Privacy Policy</a>
+                        <div class="vertical-line"></div>
+                        <a href="/">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

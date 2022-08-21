@@ -1,0 +1,236 @@
+#Header {
+    background-color: var(--navi-blue-200);
+    height: 110px;
+    border-bottom: 2px solid var(--line-cl);
+
+    .nav-bar-menu {
+        .search-post {
+            .post {
+                background: white !important;
+                color: var(--navi-blue-200) !important;
+            }
+        }
+    }
+}
+
+// Chỉ lấy từ content xuống 
+
+
+#Content {
+    background-color: #F9F9F9;
+
+    .main-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #F9F9F9;
+        display: flex;
+
+        .company-box {
+            margin-left: auto;
+            width: 80%;
+
+            .company-info {
+                width: 100%;
+                height: auto;
+                padding: 30px;
+                background-color: white;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+
+                .head {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .logo {
+                        img {
+                            width: 150px;
+                            height: 150px;
+                            object-fit: cover;
+                            border: 1px solid #E5E5E5;
+                            border-radius: 4px;
+                        }
+                    }
+
+                    .info {
+                        .short-name {
+                            font-size: 20px;
+                            font-weight: 700;
+                            font-family: var(--Mont);
+                            margin-bottom: 10px;
+                        }
+
+                        .full-name {
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-family: var(--Mont);
+                            margin-bottom: 10px;
+                        }
+
+                        .address {
+                            font-size: 14px;
+                            font-weight: 400;
+                            font-family: var(--Mont);
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                .social {
+                    margin: 20px 0;
+
+                    .icon-link {
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: cent;
+                        gap: 20px;
+
+                        ul {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            li {
+                                a {
+                                    color: black;
+
+                                    &:hover {
+                                        color: var(--navi-blue-200);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .link {
+                        display: grid;
+                        gap: 20px;
+                        grid-template-columns: repeat(3, minmax(100px, 1fr));
+
+                        .social-item {
+                            a {
+                                color: black;
+                                text-decoration: none;
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: var(--Mont);
+
+                                i {
+                                    width: 20px;
+                                    color: var(--navi-blue-200);
+                                }
+                            }
+
+                            &:hover {
+                                a {
+                                    color: var(--navi-blue-400);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .company-intro {
+                margin-top: 20px;
+                width: 100%;
+                height: auto;
+                padding: 30px;
+                background-color: white;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+
+                iframe {
+                    width: 100%;
+                    height: 415px;
+                    border-radius: 10px;
+                }
+
+                .paragraph {
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: var(--Mont);
+                    margin-top: 20px;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            .list-job{
+                .job-item{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    #Content {
+        .main-content {
+            .company-box {
+                width: 65%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #Content {
+        .main-content {
+            .company-box {
+                width: 100%;
+                .company-info{
+                    .social{
+                        .link{
+                        grid-template-columns: repeat(2, minmax(100px, 1fr));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    #Content {
+        .main-content {
+            .company-box {
+                .company-info{
+                    .social{
+                        .link{
+                            .social-item{
+                                a{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 415px) {
+    #Content{
+        .main-content{
+            .company-box{
+                .company-info{
+                    .head{
+                        .logo{
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
