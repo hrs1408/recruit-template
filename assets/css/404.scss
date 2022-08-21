@@ -1,0 +1,87 @@
+#Header {
+    background-color: var(--navi-blue-200);
+    height: 110px;
+    border-bottom: 2px solid var(--line-cl);
+
+    .nav-bar-menu {
+        .search-post {
+            .post {
+                background: white !important;
+                color: var(--navi-blue-200) !important;
+            }
+        }
+    }
+}
+
+//Chỉ lấy từ content xuống
+
+#Content {
+    text-align: center;
+    .page_404 {
+        padding: 40px 0;
+        background: #fff;
+        font-family: var(--Mont);
+    }
+
+    .page_404 img {
+        width: 100%;
+    }
+
+    .four_zero_four_bg {
+        background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    h1 {
+        font-size: 80px;
+        font-weight: bold;
+        font-family: var(--Pops);
+        display: flex;
+        gap:150px;
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .link_404 {
+        color: #fff !important;
+        padding: 10px 20px;
+        background: var(--navi-blue-200);
+        margin: 20px 0;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 4px;
+        &:hover{
+            background: var(--navi-blue-400);
+        }
+    }
+
+    .blue{
+        color: var(--navi-blue-400);
+    }
+
+    .rotate{
+        position: absolute;
+        border: 3px solid var(--navi-blue-400);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        font-family: var(--Mont);
+        animation: rotate 2s linear infinite;
+        color: var(--navi-blue-400);
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

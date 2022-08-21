@@ -6,11 +6,283 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruit</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/404.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
 </head>
 
 <body>
-  
+    <div id="Header">
+        <div class="box">
+            <div class="nav-bar">
+                <div class="side-button">
+                    <button class="clear-button" onclick="openNav()">
+                        <i class="fad fa-bars"></i>
+                    </button>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <div class="head">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="search">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    <button class="accordion">Home <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Home Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Home Page 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home Page 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Category <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Category 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Category 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Category 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Contact <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="#">Contact 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="../../assets/img/logo/logo-white.png" alt="">
+                </div>
+                <div class="nav-bar-menu">
+                    <ul class="nav">
+                        <li>
+                            <a href="#" class="nav-item">Home <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Jobs <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Jobs</a>
+                                <a href="#" class="drop-item">Job Favorite</a>
+                                <a href="#" class="drop-item">Post a Job</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Candidates <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Candidates</a>
+                                <a href="#" class="drop-item">Candidate Favorite</a>
+                                <a href="#" class="drop-item">Post a Candidate</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Employers <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Company</a>
+                                <a href="#" class="drop-item">Company Details</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Blog <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Blog list</a>
+                                <a href="#" class="drop-item">Top Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Contact Us <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search-post">
+                        <button class="search clear-button">
+                            <i class="fad fa-search"></i>
+                        </button>
+                        <button class="post clear-button">
+                            <i class="fad fa-plus-circle"></i> <span>post a job</span>
+                        </button>
+                    </div>
+                </div>
+                <a href="" class="clear-button account">
+                    <i class="fad fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="Content">
+        <section class="page_404">
+            <div class="box">
+                <div class="col-sm-10 col-sm-offset-1  text-center">
+                    <h1><span class="blue">4</span><span class="rotate">?</span><span class="blue ">4</span></h1>
+                    <div class="four_zero_four_bg">
+                    </div>
+
+                    <div class="contant_box_404">
+                        <h3 class="h2">
+                            Look like you're lost
+                        </h3>
+
+                        <p>the page you are looking for not avaible!</p>
+
+                        <a href="" class="link_404">Go to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="newsletter">
+            <div class="box content">
+                <div class="title-newsletter">
+                    <i class="fad fa-envelope"></i>
+                    <p>Sign In To Our Newsletter</p>
+                </div>
+                <form action="">
+                    <input type="email" class="email" placeholder="Enter your email...">
+                    <button class="clear-button">
+                        <i class="fad fa-plus-circle"></i> SUBMIT
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="Footer">
+        <div class="box">
+            <div class="footer-head">
+                <div class="contact">
+                    <div class="logo">
+                        <img src="../../assets/img/logo/logo-white.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>
+                            Donec id elit non mi porta graat eget metus. Akshay id elit non Vestibulum id ligula .
+                        </p>
+                    </div>
+                    <a href="" class="clear-button button">
+                        Read Article <i class="fad fa-arrow-right"></i>
+                    </a>
+
+                    <div class="social-group">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube-square"></i>
+                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-google-plus-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="candidate">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href=""><i class="fad fa-map-marker-alt"></i>
+                                <p>7007 Riverside Dr Redding, CA 96001 USA</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-phone-alt"></i>
+                                <p>Call us +49 1234 5678 9</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-envelope"></i>
+                                <p>example@gmail.com</p>
+                            </a></li>
+                        <li><a href=""><i class="fad fa-clock"></i>
+                                <p> Mon-Sat: 8:00am - 7:00pm</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coppyright">
+                <div class="display-flex-1 justify-content-between width-100">
+                    <p>© Copyright 2018 by <a href="">Entaro</a>. All Rights Reserved.</p>
+                    <div class="policy">
+                        <a href="">Terms of Use</a>
+                        <div class="vertical-line"></div>
+                        <a href="">Privacy Policy</a>
+                        <div class="vertical-line"></div>
+                        <a href="">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
