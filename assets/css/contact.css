@@ -82,6 +82,7 @@
   font-weight: 500;
   font-family: var(--Mont);
   color: var(--navi-blue-200);
+  outline: none;
 }
 #Content .message .message-box .box-left form .form-group p {
   position: absolute;
