@@ -327,21 +327,26 @@
         font-family: var(--Mont);
         margin-bottom: 10px;
     }
-    .link{
+
+    .link {
         margin-top: 20px;
-        li{
+
+        li {
             display: flex;
             align-items: center;
             gap: 10px;
-            i{
+
+            i {
                 color: white;
             }
-            a{
+
+            a {
                 color: white;
                 font-size: 14px;
                 font-family: var(--Mont);
                 text-decoration: none;
-                &:hover{
+
+                &:hover {
                     text-decoration: underline;
                 }
             }
@@ -499,9 +504,11 @@
         padding: 0 20px;
         max-width: 100%;
     }
+
     .side-bar {
         width: 30%;
     }
+
     .job-item {
         .head-item {
             padding: 20px 10px;
@@ -557,10 +564,12 @@
         padding: 0 20px;
         max-width: 100%;
     }
+
     .side-bar {
         display: none;
         width: 100%;
     }
+
     .job-item {
         .head-item {
             text-align: center;
@@ -635,6 +644,7 @@
         padding: 0 20px;
         max-width: 100%;
     }
+
     .side-bar {
         display: none;
         width: 100%;

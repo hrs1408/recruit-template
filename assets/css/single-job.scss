@@ -2,12 +2,19 @@
     background-color: var(--navi-blue-200);
     height: 110px;
     border-bottom: 2px solid var(--line-cl);
+    position: relative;
 
-    .nav-bar-menu {
-        .search-post {
-            .post {
-                background: white !important;
-                color: var(--navi-blue-200) !important;
+    .nav-bar {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .nav-bar-menu {
+            .search-post {
+                .post {
+                    background: white !important;
+                    color: var(--navi-blue-200) !important;
+                }
             }
         }
     }
@@ -16,6 +23,7 @@
 #Content {
     .main-content {
         margin-top: 20px;
+
         .box {
             display: flex;
             gap: 1%;
@@ -28,6 +36,7 @@
                 .content-item {
                     padding: 50px;
                     padding-bottom: 0;
+
                     .title {
                         &::after {
                             content: "";
@@ -257,22 +266,26 @@
 }
 
 @media screen and (max-width: 600px) {
-    #Content{
-        .main-content{
-            .box{
+    #Content {
+        .main-content {
+            .box {
                 display: block;
 
-                .job-details{
+                .job-details {
                     width: 100%;
                 }
-                .job-overview{
+
+                .job-overview {
                     width: 100%;
                     margin-top: 20px;
-                    .head{
+
+                    .head {
                         padding: 15px 40px;
                     }
-                    .content{
+
+                    .content {
                         padding: 0 30px;
+
                         .apply {
                             padding: 0 30px 20px 30px;
                         }
@@ -284,22 +297,26 @@
 }
 
 @media screen and (max-width: 768px) {
-    #Content{
-        .main-content{
-            .box{
+    #Content {
+        .main-content {
+            .box {
                 display: block;
 
-                .job-details{
+                .job-details {
                     width: 100%;
                 }
-                .job-overview{
+
+                .job-overview {
                     width: 100%;
                     margin-top: 20px;
-                    .head{
+
+                    .head {
                         padding: 15px 40px;
                     }
-                    .content{
+
+                    .content {
                         padding: 0 30px;
+
                         .apply {
                             padding: 0 30px 20px 30px;
                         }
@@ -312,22 +329,26 @@
 
 
 @media screen and (max-width: 992px) {
-    #Content{
-        .main-content{
-            .box{
+    #Content {
+        .main-content {
+            .box {
                 display: block;
 
-                .job-details{
+                .job-details {
                     width: 100%;
                 }
-                .job-overview{
+
+                .job-overview {
                     width: 100%;
                     margin-top: 20px;
-                    .head{
+
+                    .head {
                         padding: 15px 40px;
                     }
-                    .content{
+
+                    .content {
                         padding: 0 30px;
+
                         .apply {
                             padding: 0 30px 20px 30px;
                         }

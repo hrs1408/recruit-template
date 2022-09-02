@@ -1,3 +1,96 @@
+#topBar {
+  font-family: var(--Mont);
+  background-color: var(--navi-blue-400);
+  color: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+#topBar .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#topBar .box .info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#topBar .box .info a {
+  color: #fff;
+  text-decoration: none;
+}
+#topBar .box .info a:hover {
+  text-decoration: underline;
+}
+#topBar .box .user {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#topBar .box .user .login {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+#topBar .box .user .login:hover {
+  opacity: 0.8;
+}
+#topBar .box .user .register {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+#topBar .box .user .register:hover {
+  opacity: 0.8;
+}
+#topBar .box .user .socials {
+  display: flex;
+  gap: 20px;
+}
+#topBar .box .user .socials a {
+  color: white;
+}
+#topBar .box .user .socials a:hover {
+  opacity: 0.8;
+}
+#topBar .box .user .user-info {
+  position: relative;
+  cursor: pointer;
+}
+#topBar .box .user .user-info:hover .user-menu {
+  display: block;
+}
+#topBar .box .user .user-info .user-menu {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px 15px;
+  z-index: 100;
+  border-radius: 8px;
+  border: 1px solid var(--navi-blue-200);
+  display: none;
+}
+#topBar .box .user .user-info .user-menu a {
+  text-decoration: none;
+  color: var(--navi-blue-400);
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#topBar .box .user .user-info .user-menu a:hover {
+  opacity: 0.8;
+}
+
 #Header {
   background-color: rgb(175, 175, 175);
   width: 100%;
@@ -218,9 +311,40 @@
 #Header .nav-bar .account {
   display: none;
   color: white;
+  font-family: var(--Mont);
 }
-#Header .nav-bar .account i {
-  font-size: 20px;
+#Header .nav-bar .account .user-info {
+  position: relative;
+  cursor: pointer;
+}
+#Header .nav-bar .account .user-info:hover .user-menu {
+  display: block;
+}
+#Header .nav-bar .account .user-info .user-menu {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px 15px;
+  z-index: 100;
+  right: 0;
+  border-radius: 8px;
+  border: 1px solid var(--navi-blue-200);
+  display: none;
+}
+#Header .nav-bar .account .user-info .user-menu a {
+  text-decoration: none;
+  color: var(--navi-blue-400);
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#Header .nav-bar .account .user-info .user-menu a:hover {
+  opacity: 0.8;
 }
 
 #Footer {
@@ -358,6 +482,9 @@
   }
 }
 @media only screen and (max-width: 992px) {
+  #topBar .user .user-info {
+    display: none;
+  }
   #Header {
     width: 100%;
   }
@@ -379,6 +506,12 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  #topBar .box {
+    justify-content: center;
+  }
+  #topBar .box .info {
+    display: none;
+  }
   #Header {
     width: 100%;
   }
