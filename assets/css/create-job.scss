@@ -1,0 +1,107 @@
+#Header {
+    background-color: var(--navi-blue-200);
+    height: 110px;
+    border-bottom: 2px solid var(--line-cl);
+    position: relative;
+
+    .nav-bar {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .nav-bar-menu {
+            .search-post {
+                .post {
+                    background: white !important;
+                    color: var(--navi-blue-200) !important;
+                }
+            }
+        }
+    }
+}
+
+#Content {
+    font-family: var(--Mont);
+
+    input {
+        margin-top: 10px;
+        border: 1px solid var(--navi-blue-200);
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    select {
+        margin-top: 10px;
+        border: 1px solid var(--navi-blue-200);
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+
+        .create-job {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            .title {
+                grid-column: 1 / span 2;
+            }
+
+            .form-group {
+
+                margin-bottom: 20px;
+
+                .title-form {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: var(--navi-blue-200);
+                }
+
+                .require {
+                    color: red;
+                    font-size: 16px;
+                }
+
+
+                .ck-editor__editable[role="textbox"] {
+                    min-height: 200px;
+                }
+
+                .ck-content .image {
+                    max-width: 80%;
+                    margin: 20px auto;
+                }
+            }
+        }
+
+        .button-submit {
+            width: 100px;
+            padding: 10px 20px;
+            background-color: var(--navi-blue-200);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 20px 0;
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #Content {
+        .main-content {
+            .create-job {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

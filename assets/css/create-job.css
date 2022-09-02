@@ -1,0 +1,82 @@
+#Header {
+  background-color: var(--navi-blue-200);
+  height: 110px;
+  border-bottom: 2px solid var(--line-cl);
+  position: relative;
+}
+#Header .nav-bar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#Header .nav-bar .nav-bar-menu .search-post .post {
+  background: white !important;
+  color: var(--navi-blue-200) !important;
+}
+
+#Content {
+  font-family: var(--Mont);
+}
+#Content input {
+  margin-top: 10px;
+  border: 1px solid var(--navi-blue-200);
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+#Content select {
+  margin-top: 10px;
+  border: 1px solid var(--navi-blue-200);
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+#Content .main-content {
+  width: 100%;
+}
+#Content .main-content .create-job {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#Content .main-content .create-job .title {
+  grid-column: 1/span 2;
+}
+#Content .main-content .create-job .form-group {
+  margin-bottom: 20px;
+}
+#Content .main-content .create-job .form-group .title-form {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navi-blue-200);
+}
+#Content .main-content .create-job .form-group .require {
+  color: red;
+  font-size: 16px;
+}
+#Content .main-content .create-job .form-group .ck-editor__editable[role=textbox] {
+  min-height: 200px;
+}
+#Content .main-content .create-job .form-group .ck-content .image {
+  max-width: 80%;
+  margin: 20px auto;
+}
+#Content .main-content .button-submit {
+  width: 100px;
+  padding: 10px 20px;
+  background-color: var(--navi-blue-200);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  #Content .main-content .create-job {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=create-job.css.map */
