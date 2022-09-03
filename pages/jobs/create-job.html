@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../assets/css/global.css">
     <link rel="stylesheet" href="../../assets/css/common.css">
     <link rel="stylesheet" href="../../assets/css/create-job.css">
+    <link rel="stylesheet" href="/dist/output.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
@@ -20,7 +21,7 @@
 
 <body>
     <div id="topBar">
-        <div class="box">
+        <div class="box mt-5">
             <div class="info">
                 <a href="tel: 115" class="phone">
                     <i class="fad fa-phone-alt"></i>
@@ -177,7 +178,7 @@
         </div>
     </div>
     <div id="Content">
-        <div class="breadcrumb">
+        <div class="breadcrumb mt-2">
             <div class="box">
                 <h2 class="job-title">Senior Health And Food</h2>
                 <ul class="display-flex-1 link">
@@ -196,188 +197,189 @@
         <div class="main-content">
             <div class="box">
                 <form action="" class="create-job">
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Your email</span>
-                            <span class="require">(*)</span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="Your email">
+                    <div class="create-job-item">
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Your email</span>
+                                <span class="require">(*)</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Job title</span>
+                                <span class="require">(*)</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Application email</span>
+                                <span class="require">(*)</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Location</span>
+                                <span class="require">(*)</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Job Region</span>
+                                <span class="require">(*)</span>
+                            </label>
+                            <select name="" id="">
+                                <option value="">--</option>
+                                <option value="">Hue</option>
+                                <option value="">Hue</option>
+                                <option value="">Hue</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Job Type</span>
+                                <span class="require">(*)</span>
+                            </label>
+                            <select name="" id="">
+                                <option value="">--</option>
+                                <option value="">Full time</option>
+                                <option value="">Full time</option>
+                                <option value="">Full time</option>
+                                <option value="">Full time</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Job Category</span>
+                                <span class="require">(*)</span>
+                            </label>
+                            <select name="" id="">
+                                <option value="">--</option>
+                                <option value="">Full time</option>
+                                <option value="">Full time</option>
+                                <option value="">Full time</option>
+                                <option value="">Full time</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Job Tags</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="e.g. PHP, Social Media, Management">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Description</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <div id="editor"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Job Salary</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="$12K - $15K">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Experience </span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control" placeholder="+1 Years Experience">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Featured Image </span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="file" class="form-control">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Job title</span>
-                            <span class="require">(*)</span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Application email</span>
-                            <span class="require">(*)</span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Location</span>
-                            <span class="require">(*)</span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Job Region</span>
-                            <span class="require">(*)</span>
-                        </label>
-                        <select name="" id="">
-                            <option value="">--</option>
-                            <option value="">Hue</option>
-                            <option value="">Hue</option>
-                            <option value="">Hue</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Job Type</span>
-                            <span class="require">(*)</span>
-                        </label>
-                        <select name="" id="">
-                            <option value="">--</option>
-                            <option value="">Full time</option>
-                            <option value="">Full time</option>
-                            <option value="">Full time</option>
-                            <option value="">Full time</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Job Category</span>
-                            <span class="require">(*)</span>
-                        </label>
-                        <select name="" id="">
-                            <option value="">--</option>
-                            <option value="">Full time</option>
-                            <option value="">Full time</option>
-                            <option value="">Full time</option>
-                            <option value="">Full time</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Job Tags</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="e.g. PHP, Social Media, Management">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Description</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <div id="editor"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Job Salary</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="$12K - $15K">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Experience </span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="+1 Years Experience">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Featured Image </span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="file" class="form-control">
-                    </div>
-                    <div class="title">
-                        <h2>Company Details</h2>
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Company name</span>
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Tagline</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Description</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <div id="editor2"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Website</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Video</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Twitter</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Facebook</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Linkedin</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Pinterest</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Instagram</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">
-                            <span class="title-form">Logo</span>
-                            <span class="require">(optional)</span>
-                        </label>
-                        <input type="file" class="form-control">
-                    </div>
+                    <div class="info-company">
+                        <div class="title">
+                            <h2>Company Details</h2>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Company name</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Tagline</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Description</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <div id="editor2"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Website</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Video</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Twitter</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Facebook</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Linkedin</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Pinterest</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Instagram</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">
+                                <span class="title-form">Logo</span>
+                                <span class="require">(optional)</span>
+                            </label>
+                            <input type="file" class="form-control">
+                        </div>
                 </form>
                 <button class="button-submit" type="submit">
                     Create
