@@ -1,0 +1,158 @@
+#Header {
+  background-color: var(--navi-blue-200);
+  height: 110px;
+  border-bottom: 2px solid var(--line-cl);
+  position: relative;
+}
+#Header .nav-bar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#Header .nav-bar .nav-bar-menu .search-post .post {
+  background: white !important;
+  color: var(--navi-blue-200) !important;
+}
+
+#Content {
+  font-family: var(--Mont);
+}
+#Content input {
+  margin-top: 10px;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  padding: 10px;
+  width: 95%;
+  font-size: 14px;
+  float: right;
+  border: 1px solid #ddd;
+}
+#Content input:focus {
+  outline-color: var(--navi-blue-200);
+}
+#Content select {
+  margin-top: 10px;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  padding: 10px;
+  width: 95%;
+  float: right;
+}
+#Content .main-content {
+  width: 100%;
+}
+#Content .main-content .box .create-job .create-job-item {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+}
+#Content .main-content .box .create-job .create-job-item .form-group {
+  margin-bottom: 40px;
+}
+#Content .main-content .box .create-job .create-job-item .form-group .title-form {
+  font-size: 16px;
+  font-weight: 600;
+}
+#Content .main-content .box .create-job .create-job-item .form-group .require {
+  color: red;
+  opacity: 0.75;
+  font-size: 0.83em;
+}
+#Content .main-content .box .create-job .create-job-item .form-group .ck-editor__editable[role=textbox] {
+  min-height: 200px;
+}
+#Content .main-content .box .create-job .create-job-item .form-group .ck-content .image {
+  max-width: 80%;
+  margin: 20px auto;
+}
+#Content .main-content .box .create-job .create-job-item .form-group .ck.ck-editor {
+  margin-top: 10px;
+  width: 95%;
+  float: right;
+}
+#Content .main-content .box .create-job .create-job-item .form-group-item {
+  width: 90%;
+}
+#Content .main-content .box .create-job .info-company {
+  width: 100%;
+}
+#Content .main-content .box .create-job .info-company .form-group {
+  place-items: center;
+  display: flex;
+}
+#Content .main-content .box .create-job .info-company .form-group label {
+  width: 30%;
+}
+#Content .main-content .box .create-job .info-company .form-group .form-control {
+  width: 70%;
+  border: 1px solid #ddd;
+}
+#Content .main-content .box .create-job .info-company .form-group .form-control:focus {
+  outline-color: var(--navi-blue-200);
+}
+#Content .main-content .box .create-job .info-company .form-group .ck.ck-editor {
+  width: 70%;
+}
+#Content .main-content .box .create-job .info-company .title {
+  grid-column: 1/span 2;
+}
+#Content .main-content .box .create-job .info-company .form-group {
+  margin-bottom: 20px;
+}
+#Content .main-content .box .create-job .info-company .form-group .title-form {
+  font-size: 16px;
+  font-weight: 600;
+}
+#Content .main-content .box .create-job .info-company .form-group .require {
+  opacity: 0.75;
+  font-size: 0.83em;
+}
+#Content .main-content .box .create-job .info-company .form-group .ck-editor__editable[role=textbox] {
+  min-height: 200px;
+}
+#Content .main-content .box .create-job .info-company .form-group .ck-content .image {
+  max-width: 80%;
+  margin: 20px auto;
+}
+#Content .main-content .box .button-submit {
+  width: 100px;
+  padding: 10px 20px;
+  background-color: var(--navi-blue-200);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  #Content .main-content .box .create-job .create-job-item {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  #Content .main-content .box .create-job .create-job-item .form-group {
+    place-items: center;
+    display: flex;
+  }
+  #Content .main-content .box .create-job .create-job-item .form-group label {
+    width: 30%;
+  }
+  #Content .main-content .box .create-job .create-job-item .form-group .form-control {
+    width: 70%;
+  }
+  #Content .main-content .box .create-job .create-job-item .form-group select {
+    width: 70%;
+  }
+  #Content .main-content .box .create-job .create-job-item .form-group .ck.ck-editor {
+    width: 70%;
+  }
+  #Content .main-content .box .create-job .create-job-item .form-group .title-form {
+    font-size: 15px;
+  }
+  #Content .main-content .box .create-job .info-company .form-group .title-form {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=create-job.css.map */

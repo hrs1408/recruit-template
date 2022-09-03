@@ -1,0 +1,194 @@
+#Header {
+    background-color: var(--navi-blue-200);
+    height: 110px;
+    border-bottom: 2px solid var(--line-cl);
+    position: relative;
+
+    .nav-bar {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .nav-bar-menu {
+            .search-post {
+                .post {
+                    background: white !important;
+                    color: var(--navi-blue-200) !important;
+                }
+            }
+        }
+    }
+}
+
+#Content {
+    font-family: var(--Mont);
+
+    input {
+        margin-top: 10px;
+        border: 1px solid #e9e9e9;
+        border-radius: 5px;
+        padding: 10px;
+        width: 95%;
+        font-size: 14px;
+        float: right;
+        border: 1px solid #ddd;
+        &:focus {
+             outline-color: var(--navi-blue-200);
+        }
+    }
+
+    select {
+        margin-top: 10px;
+        border: 1px solid #e9e9e9;
+        border-radius: 5px;
+        padding: 10px;
+        width: 95%;
+        float: right;
+    }
+
+    .main-content {
+        width: 100%;
+            .box {
+                .create-job {
+                    .create-job-item {
+                        margin-top: 20px;
+                        display: grid;
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                        width: 100%;
+                        .form-group {
+                            margin-bottom: 40px;
+                            .title-form {
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+                            .require {
+                                color: red;
+                                opacity: .75;
+                                font-size: .83em;
+                            }
+                            .ck-editor__editable[role="textbox"] {
+                                min-height: 200px;
+                                
+                            }
+                            .ck-content .image {
+                                max-width: 80%;
+                                margin: 20px auto;
+                            }
+                            .ck.ck-editor {
+                                margin-top: 10px;
+                                width: 95%;
+                                float: right;
+                            }
+                        }
+                        .form-group-item {
+                            width: 90%;
+                           
+                        }
+                    }
+                    .info-company {
+                        width: 100%;
+                        
+                        .form-group {
+                            place-items: center;
+                            display: flex;
+                            label {
+                                width: 30%;
+                            }
+                            .form-control {
+                               width: 70%;
+                               border: 1px solid #ddd;
+                               &:focus {
+                                    outline-color: var(--navi-blue-200);
+                               }
+                            }
+                            .ck.ck-editor {
+                                width: 70%;
+                            }
+                        }
+                    .title {
+                        grid-column: 1 / span 2;
+                    }
+        
+                    .form-group {
+                        margin-bottom: 20px;
+                        .title-form {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+        
+                        .require {
+                            opacity: .75;
+                            font-size: .83em;
+                        }
+                        .ck-editor__editable[role="textbox"] {
+                            min-height: 200px;
+                        }
+                        .ck-content .image {
+                            max-width: 80%;
+                            margin: 20px auto;
+                        }
+                    }
+                }
+        
+
+                }
+                .button-submit {
+                    width: 100px;
+                    padding: 10px 20px;
+                    background-color: var(--navi-blue-200);
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin: 20px 0;
+        
+                }
+            }
+       
+
+    }
+}
+@media screen and (max-width: 768px) {
+    #Content {
+        .main-content {
+            .box {
+                .create-job {
+                    .create-job-item {
+                        display: grid;
+                        grid-template-columns: repeat(1, minmax(0, 1fr));
+                        .form-group {
+                            place-items: center;
+                            display: flex;
+                            label {
+                                width: 30%;
+                            }
+                            .form-control {
+                                width: 70%;
+                            }
+                            select {
+                                width: 70%;
+                            }
+                            .ck.ck-editor {
+                                width: 70%;
+                                
+                            }
+                            .title-form {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    .info-company{
+                        .form-group {
+                            .title-form {
+                                font-size: 15px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
