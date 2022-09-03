@@ -119,40 +119,10 @@
         padding-bottom: 30px;
         background-color: #F9F9F9;
         display: flex;
+
         .job-box {
             margin-left: auto;
             width: 80%;
-
-            .view-box {
-                width: 100%;
-                padding: 30px;
-                background-color: white;
-                border-radius: 4px;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                select {
-                    border: 1px solid rgba(0, 0, 0, 0.1);
-                    outline: none;
-                    border-radius: 4px;
-                    padding: 10px 15px;
-                }
-
-                .view {
-                    button {
-                        border: none;
-                        outline: none;
-                        color: var(--navi-blue-400);
-                        font-family: var(--Mont);
-                        font-size: 14px;
-                        padding: 10px 15px;
-                        border-radius: 4px;
-                        cursor: pointer;
-                    }
-                }
-            }
 
             .list-job {
                 .job-item {
@@ -366,7 +336,7 @@
         }
 
         .main-content {
-           
+
             .job-box {
                 width: 100%;
 
