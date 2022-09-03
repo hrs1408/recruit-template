@@ -155,4 +155,21 @@
   #Content .main-content .box .create-job .info-company .form-group .title-form {
     font-size: 15px;
   }
+  #Content .main-content .box .button-submit {
+    width: 100px;
+    padding: 10px 20px;
+    background-color: var(--navi-blue-200);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  #Content .main-content .create-job {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=create-job.css.map */

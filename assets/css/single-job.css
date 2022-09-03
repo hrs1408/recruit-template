@@ -2,8 +2,14 @@
   background-color: var(--navi-blue-200);
   height: 110px;
   border-bottom: 2px solid var(--line-cl);
+  position: relative;
 }
-#Header .nav-bar-menu .search-post .post {
+#Header .nav-bar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#Header .nav-bar .nav-bar-menu .search-post .post {
   background: white !important;
   color: var(--navi-blue-200) !important;
 }
