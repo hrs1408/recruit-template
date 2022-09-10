@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ant-layout .layer-overlay {
+  width: 100%;
+}
+.ant-layout .layer-overlay .profile-tab-nav {
+  border-right: 1px solid #dee2e6;
+}
+.ant-layout .layer-overlay .profile-tab-nav .profile-img .img-circle img {
+  border-radius: 100%;
+  border: 5px solid #fff;
+}
+.ant-layout .layer-overlay .profile-tab-nav .nav-pills .tab-list .tab-item.active .profile-tab {
+  background-color: #184A7E;
+  color: #fff;
+}
+.ant-layout .layer-overlay .profile-tab-nav .nav-pills .tab-list .tab-item .profile-tab {
+  cursor: pointer;
+  color: black;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+.ant-layout .layer-overlay .profile-tab-nav .nav-pills .tab-list .tab-item .profile-tab:hover {
+  background-color: #184A7E;
+  color: #fff;
+}
+.ant-layout .layer-overlay .profile-tab-nav .nav-pills .tab-list .tab-item .profile-tab i {
+  padding-right: 15px;
+}
+.ant-layout .layer-overlay .tab-content {
+  padding-bottom: 100px;
+}
+.ant-layout .layer-overlay .tab-content .tab-pane {
+  display: none;
+}
+.ant-layout .layer-overlay .tab-content .tab-pane.active {
+  display: block;
+  width: 100%;
+}
+.ant-layout .layer-overlay .tab-content .tab-pane .title-header {
+  padding: 1rem 1.35rem;
+  margin-bottom: 0;
+  color: #fff;
+  background-color: #184A7E;
+  border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.ant-layout .layer-overlay .tab-content .tab-pane .form-group .form-group-item input {
+  height: 43px;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.ant-layout .layer-overlay .tab-content .tab-pane .form-group .form-group-item select {
+  height: 43px;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.ant-layout .layer-overlay .tab-content .tab-pane .form-group .form-group-item label {
+  font-weight: 700;
+}
+.ant-layout .layer-overlay .tab-content .tab-pane .form-group .form-group-item textarea {
+  height: 76px;
+  min-height: 76px;
+  max-height: 126px;
+  width: 100%;
+  padding: 12px 12px 12px 20px;
+  font-size: 16px;
+  border: 1px solid #979797;
+  outline: navajowhite;
+}
+.ant-layout .layer-overlay .tab-content .tab-pane .form-group .ck-editor__editable[role=textbox] {
+  min-height: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}/*# sourceMappingURL=profile.css.map */
