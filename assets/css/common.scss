@@ -1,8 +1,123 @@
+#topBar {
+    font-family: var(--Mont);
+    background-color: var(--navi-blue-400);
+    color: #fff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .login {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 14px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            .register {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 14px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            .socials {
+                display: flex;
+                gap: 20px;
+
+                a {
+                    color: white;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            .user-info {
+                position: relative;
+                cursor: pointer;
+
+                &:hover {
+                    .user-menu {
+                        display: block;
+                    }
+                }
+
+                .user-menu {
+                    position: absolute;
+                    background-color: #fff;
+                    padding: 20px 15px;
+                    z-index: 100;
+                    border-radius: 8px;
+                    border: 1px solid var(--navi-blue-200);
+                    display: none;
+                    right: 0;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--navi-blue-400);
+                        font-size: 14px;
+                        font-weight: 700;
+                        display: block;
+                        padding: 10px 0;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 #Header {
     background-color: rgb(175, 175, 175);
     width: 100%;
     height: auto;
-       .nav-bar {
+
+
+    .nav-bar {
         display: flex;
         gap: 10px;
         justify-content: space-between;
@@ -25,7 +140,7 @@
             }
         }
 
-        
+
         .sidenav {
             height: 100%;
             width: 0;
@@ -145,6 +260,7 @@
 
                 li {
                     position: relative;
+
                     .nav-item {
                         text-decoration: none;
                         color: white;
@@ -169,17 +285,17 @@
                             &::after {
                                 width: 100%;
                             }
-                          
+
                         }
                     }
 
-                    &:hover{
-                        .dropdown{
+                    &:hover {
+                        .dropdown {
                             display: flex;
                         }
                     }
 
-                    .dropdown{
+                    .dropdown {
                         width: 170px;
                         display: none;
                         background-color: var(--navi-blue-200);
@@ -191,12 +307,14 @@
                         padding: 20px;
                         flex-wrap: wrap;
                         gap: 10px;
-                        .drop-item{
+
+                        .drop-item {
                             color: white;
                             height: auto;
                             text-decoration: none;
                             font-size: 14px;
                             font-family: var(--Mont);
+
                             &::after {
                                 margin-top: 4px;
                                 content: '';
@@ -206,6 +324,7 @@
                                 background: white;
                                 transition: width 0.3s ease-in-out;
                             }
+
                             &:hover {
                                 &::after {
                                     width: 100%;
@@ -260,9 +379,46 @@
         .account {
             display: none;
             color: white;
+            font-family: var(--Mont);
 
-            i {
-                font-size: 20px;
+            .user-info {
+                position: relative;
+                cursor: pointer;
+
+                &:hover {
+                    .user-menu {
+                        display: block;
+                    }
+                }
+
+                .user-menu {
+                    position: absolute;
+                    background-color: #fff;
+                    padding: 20px 15px;
+                    z-index: 100;
+                    right: 0;
+                    border-radius: 8px;
+                    border: 1px solid var(--navi-blue-200);
+                    display: none;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--navi-blue-400);
+                        font-size: 14px;
+                        font-weight: 700;
+                        display: block;
+                        padding: 10px 0;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
             }
         }
     }
@@ -407,6 +563,7 @@
             justify-content: space-between;
         }
     }
+
     #Footer {
         padding: 0 20px;
     }
@@ -428,6 +585,14 @@
 }
 
 @media only screen and (max-width: 992px) {
+    #topBar {
+        .user {
+            .user-info {
+                display: none;
+            }
+        }
+    }
+
     #Header {
         width: 100%;
 
@@ -455,6 +620,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+    #topBar {
+        .box {
+            justify-content: center;
+
+            .info {
+                display: none;
+            }
+        }
+    }
+
     #Header {
         width: 100%;
 

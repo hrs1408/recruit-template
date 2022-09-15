@@ -155,8 +155,8 @@
                 }
             }
 
-            .list-job{
-                .job-item{
+            .list-job {
+                .job-item {
                     width: 100%;
                 }
             }
@@ -180,10 +180,11 @@
         .main-content {
             .company-box {
                 width: 100%;
-                .company-info{
-                    .social{
-                        .link{
-                        grid-template-columns: repeat(2, minmax(100px, 1fr));
+
+                .company-info {
+                    .social {
+                        .link {
+                            grid-template-columns: repeat(2, minmax(100px, 1fr));
                         }
                     }
                 }
@@ -197,11 +198,11 @@
     #Content {
         .main-content {
             .company-box {
-                .company-info{
-                    .social{
-                        .link{
-                            .social-item{
-                                a{
+                .company-info {
+                    .social {
+                        .link {
+                            .social-item {
+                                a {
                                     font-size: 14px;
                                 }
                             }
@@ -214,13 +215,13 @@
 }
 
 @media screen and (max-width: 415px) {
-    #Content{
-        .main-content{
-            .company-box{
-                .company-info{
-                    .head{
-                        .logo{
-                            img{
+    #Content {
+        .main-content {
+            .company-box {
+                .company-info {
+                    .head {
+                        .logo {
+                            img {
                                 width: 100px;
                                 height: 100px;
                             }
