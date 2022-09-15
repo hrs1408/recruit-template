@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruit</title>
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/single-job.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/profile.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <section class="ant-layout ">
+        <div class="layer-overlay container mt-12 mx-auto">
+            <div class="shadow">
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="profile-tab-nav col-span-3">
+                        <div class="p-4 profile-img">
+                            <div class="img-circle flex justify-center mb-3">
+                                <img class="h-24 w-24 shadow"
+                                    src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.6435-1/110200321_138522867877254_7540728164716663231_n.jpg?stp=dst-jpg_p200x200&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=WDMjIlgRDWQAX-fbJVw&_nc_ht=scontent.fhan14-1.fna&oh=00_AT8WQ3n4ti-SRgmlH2KC6582hLyJJnadc-82I9ylsTSCeg&oe=633FC956"
+                                    alt="Image">
+                            </div>
+                            <h4 class="text-center">Nguyen van hoang</h4>
+                        </div>
+                        <div class="nav-pills">
+                            <ul class="tab-list">
+                                <li class="tab-item active">
+                                    <div class="profile-tab">
+                                        <i class="fas fa-user"></i>
+                                        <p>Thông tin cá nhân</p>
+                                    </div>
+                                </li>
+                                <li class="tab-item ">
+                                    <div class="profile-tab">
+                                        <i class="fas fa-user"></i>
+                                        <p>Giới thiệu bản thân</p>
+                                    </div>
+                                </li>
+                                <li class="tab-item ">
+                                    <div class="profile-tab">
+                                        <i class="fas fa-user"></i>
+                                        <p>Kinh nghiệm làm việc</p>
+                                    </div>
+                                </li>
+                                <li class="tab-item ">
+
+                                    <div class="profile-tab">
+                                        <i class="fas fa-user"></i>
+                                        <p>Kỹ năng lập trình</p>
+                                    </div>
+                                </li>
+                                <li class="tab-item ">
+                                    <div class="profile-tab">
+                                        <i class="fas fa-user"></i>
+                                        <p>Học vấn</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-span-9">
+                        <form action="">
+                            <div class="tab-content">
+                                <div class="tab-pane active">
+                                    <h3 class="mb-4 title-header text-lg">Thông tin cá nhân</h3>
+                                    <div class="form-group grid grid-cols-2 mt-7 gap-6 ml-2 mr-5">
+                                        <div class="form-group-item">
+                                            <label>Họ và tên</label>
+                                            <input type="text" class="mt-4 form-control" value="Vui lòng nhập họ tên">
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>Vị trí hiện tại/ Vị trí ứng tuyển</label>
+                                            <input type="text" class="mt-4 form-control"
+                                                value="Vui lòng chọn vị trí ứng tuyển">
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>Giới tính</label>
+                                            <input type="text" class="mt-4 form-control" value="">
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>Ngày sinh</label>
+                                            <input type="datetime-local" class="mt-4" id="birthdaytime" name="">
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>Thành phố</label>
+                                            <input type="datetime-local" class="mt-4" id="birthdaytime"
+                                                name="Vui lòng chọn thành phố">
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>Địa chỉ cụ thể</label>
+                                            <select class="mt-4" id="cars">
+                                                <option value="">Huế</option>
+                                                <option value="">Hà Nội</option>
+                                                <option value="">Hồ chí minh</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>Linkedin</label>
+                                            <input type="text" class="mt-4 form-control" value="https://lk.id/username">
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>Github</label>
+                                            <input type="text" class="mt-4 form-control" value="https://lk.id/username">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane">
+                                    <h3 class="mb-4 title-header text-lg uppercase">Giới thiệu bản thân</h3>
+                                    <div class="form-group grid grid-cols-1 mt-7 gap-6 ml-2 mr-5">
+                                        <div class="form-group-item">
+                                            <label>
+                                                <span>Giới thiệu bản thân</span>
+                                                <span>(*)</span>
+                                            </label>
+                                        </div>
+                                        <div class="mt-4" id="editor"></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane">
+                                    <h3 class="mb-4 title-header text-lg uppercase">
+                                        Kinh nghiệm làm việc
+                                    </h3>
+                                    <div class="form-group grid grid-cols-1 mt-7 gap-6 ml-2 mr-5">
+                                        <div class="form-group-item">
+                                            <label>
+                                                <span>Tên công ty</span>
+                                                <span>(*)</span>
+                                            </label>
+                                            <input type="text" class="mt-4 form-control"
+                                                value="Vui lòng nhập tên trường">
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>
+                                                <span>Vị trí công việc</span>
+                                                <span>(*)</span>
+                                            </label>
+                                            <input type="text" class="mt-4 form-control"
+                                                value="Vui lòng nhập ngành học">
+                                        </div>
+
+                                        <div class="form-group-item">
+                                            <label>Thông tin khác</label>
+                                        </div>
+                                        <div class="mt-4" id="editor3"></div>
+                                        <div class="form-group-item">
+                                            <label>
+                                                <span>Công nghệ sử dụng cho vị trí này</span>
+                                                <span>(*)</span>
+                                            </label>
+                                            <textarea placeholder="Vui lòng nhập công nghệ sử dụng cho vị trí này"
+                                                class="ant-input mt-4"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane">
+                                    <h3 class="mb-4 title-header text-lg uppercase">Kỹ năng lập trình</h3>
+
+                                </div>
+                                <div class="tab-pane">
+                                    <h3 class="mb-4 title-header text-lg uppercase">Học vấn</h3>
+                                    <div class="form-group grid grid-cols-1 mt-7 gap-6 ml-2 mr-5">
+                                        <div class="form-group-item">
+                                            <label>
+                                                <span>Tên trường cơ sở đào tạo chính quy</span>
+                                                <span>(*)</span>
+                                            </label>
+                                            <input type="text" class="mt-4 form-control"
+                                                value="Vui lòng nhập tên trường">
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>
+                                                <span>Ngành học</span>
+                                                <span>(*)</span>
+                                            </label>
+                                            <input type="text" class="mt-4 form-control"
+                                                value="Vui lòng nhập ngành học">
+                                        </div>
+                                        <div class="form-group-item">
+                                            <label>Thông tin khác</label>
+                                        </div>
+                                        <div class="mt-4" id="editor2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#editor2'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#editor3'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+    <script src="../../assets/js/profile.js"></script>
+</body>
+
+</html>
