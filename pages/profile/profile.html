@@ -9,217 +9,439 @@
     <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/global.css">
     <link rel="stylesheet" href="../../assets/css/common.css">
-    <link rel="stylesheet" href="../../assets/css/single-job.css">
+    <link rel="stylesheet" href="../../assets/css/profile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
         type="text/css" />
-    <link rel="stylesheet" href="../../assets/css/profile.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
 <body>
-    <section class="ant-layout ">
-        <div class="layer-overlay container mt-12 mx-auto">
-            <div class="shadow">
-                <div class="grid grid-cols-12 gap-4">
-                    <div class="profile-tab-nav col-span-3">
-                        <div class="p-4 profile-img">
-                            <div class="img-circle flex justify-center mb-3">
-                                <img class="h-24 w-24 shadow"
-                                    src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.6435-1/110200321_138522867877254_7540728164716663231_n.jpg?stp=dst-jpg_p200x200&_nc_cat=101&ccb=1-7&_nc_sid=7206a8&_nc_ohc=WDMjIlgRDWQAX-fbJVw&_nc_ht=scontent.fhan14-1.fna&oh=00_AT8WQ3n4ti-SRgmlH2KC6582hLyJJnadc-82I9ylsTSCeg&oe=633FC956"
-                                    alt="Image">
-                            </div>
-                            <h4 class="text-center">Nguyen van hoang</h4>
-                        </div>
-                        <div class="nav-pills">
-                            <ul class="tab-list">
-                                <li class="tab-item active">
-                                    <div class="profile-tab">
-                                        <i class="fas fa-user"></i>
-                                        <p>Thông tin cá nhân</p>
-                                    </div>
-                                </li>
-                                <li class="tab-item ">
-                                    <div class="profile-tab">
-                                        <i class="fas fa-user"></i>
-                                        <p>Giới thiệu bản thân</p>
-                                    </div>
-                                </li>
-                                <li class="tab-item ">
-                                    <div class="profile-tab">
-                                        <i class="fas fa-user"></i>
-                                        <p>Kinh nghiệm làm việc</p>
-                                    </div>
-                                </li>
-                                <li class="tab-item ">
-
-                                    <div class="profile-tab">
-                                        <i class="fas fa-user"></i>
-                                        <p>Kỹ năng lập trình</p>
-                                    </div>
-                                </li>
-                                <li class="tab-item ">
-                                    <div class="profile-tab">
-                                        <i class="fas fa-user"></i>
-                                        <p>Học vấn</p>
-                                    </div>
-                                </li>
-
-                            </ul>
+    <div id="topBar">
+        <div class="box">
+            <div class="info">
+                <a href="tel: 115" class="phone">
+                    <i class="fad fa-phone-alt"></i>
+                    <span>090-123-4567</span>
+                </a>
+                <a href="mailto: huyhieu.nguyenphan@gmail.com" class="email">
+                    <i class="fad fa-envelope"></i>
+                    <span>recruit@gmail.com</span>
+                </a>
+            </div>
+            <div class="user">
+                <ul class="socials">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <div class="user-info">
+                    <span class="name">huyhieu</span><span> </span><i class="fad fa-user"></i>
+                    <ul class="user-menu">
+                        <li><a href=""><i class="fad fa-file-user"></i> Profile</a></li>
+                        <li><a href=""><i class="fad fa-sign-out"></i> Logout</a></li>
+                    </ul>
+                </div>
+                <!-- <a href="" class="login"><i class="fad fa-sign-in"></i> Login</a>
+                <a href="" class="register"><i class="fad fa-registered"></i> Register</a> -->
+            </div>
+        </div>
+    </div>
+    <div id="Header">
+        <div class="box">
+            <div class="nav-bar">
+                <div class="side-button">
+                    <button class="clear-button" onclick="openNav()">
+                        <i class="fad fa-bars"></i>
+                    </button>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <div class="head">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="search">
+                            <input type="text" placeholder="Search...">
                         </div>
                     </div>
-                    <div class="col-span-9">
-                        <form action="">
-                            <div class="tab-content">
-                                <div class="tab-pane active">
-                                    <h3 class="mb-4 title-header text-lg">Thông tin cá nhân</h3>
-                                    <div class="form-group grid grid-cols-2 mt-7 gap-6 ml-2 mr-5">
-                                        <div class="form-group-item">
-                                            <label>Họ và tên</label>
-                                            <input type="text" class="mt-4 form-control" value="Vui lòng nhập họ tên">
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>Vị trí hiện tại/ Vị trí ứng tuyển</label>
-                                            <input type="text" class="mt-4 form-control"
-                                                value="Vui lòng chọn vị trí ứng tuyển">
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>Giới tính</label>
-                                            <input type="text" class="mt-4 form-control" value="">
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>Ngày sinh</label>
-                                            <input type="datetime-local" class="mt-4" id="birthdaytime" name="">
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>Thành phố</label>
-                                            <input type="datetime-local" class="mt-4" id="birthdaytime"
-                                                name="Vui lòng chọn thành phố">
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>Địa chỉ cụ thể</label>
-                                            <select class="mt-4" id="cars">
-                                                <option value="">Huế</option>
-                                                <option value="">Hà Nội</option>
-                                                <option value="">Hồ chí minh</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>Linkedin</label>
-                                            <input type="text" class="mt-4 form-control" value="https://lk.id/username">
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>Github</label>
-                                            <input type="text" class="mt-4 form-control" value="https://lk.id/username">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane">
-                                    <h3 class="mb-4 title-header text-lg uppercase">Giới thiệu bản thân</h3>
-                                    <div class="form-group grid grid-cols-1 mt-7 gap-6 ml-2 mr-5">
-                                        <div class="form-group-item">
-                                            <label>
-                                                <span>Giới thiệu bản thân</span>
-                                                <span>(*)</span>
-                                            </label>
-                                        </div>
-                                        <div class="mt-4" id="editor"></div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane">
-                                    <h3 class="mb-4 title-header text-lg uppercase">
-                                        Kinh nghiệm làm việc
-                                    </h3>
-                                    <div class="form-group grid grid-cols-1 mt-7 gap-6 ml-2 mr-5">
-                                        <div class="form-group-item">
-                                            <label>
-                                                <span>Tên công ty</span>
-                                                <span>(*)</span>
-                                            </label>
-                                            <input type="text" class="mt-4 form-control"
-                                                value="Vui lòng nhập tên trường">
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>
-                                                <span>Vị trí công việc</span>
-                                                <span>(*)</span>
-                                            </label>
-                                            <input type="text" class="mt-4 form-control"
-                                                value="Vui lòng nhập ngành học">
-                                        </div>
-
-                                        <div class="form-group-item">
-                                            <label>Thông tin khác</label>
-                                        </div>
-                                        <div class="mt-4" id="editor3"></div>
-                                        <div class="form-group-item">
-                                            <label>
-                                                <span>Công nghệ sử dụng cho vị trí này</span>
-                                                <span>(*)</span>
-                                            </label>
-                                            <textarea placeholder="Vui lòng nhập công nghệ sử dụng cho vị trí này"
-                                                class="ant-input mt-4"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane">
-                                    <h3 class="mb-4 title-header text-lg uppercase">Kỹ năng lập trình</h3>
-
-                                </div>
-                                <div class="tab-pane">
-                                    <h3 class="mb-4 title-header text-lg uppercase">Học vấn</h3>
-                                    <div class="form-group grid grid-cols-1 mt-7 gap-6 ml-2 mr-5">
-                                        <div class="form-group-item">
-                                            <label>
-                                                <span>Tên trường cơ sở đào tạo chính quy</span>
-                                                <span>(*)</span>
-                                            </label>
-                                            <input type="text" class="mt-4 form-control"
-                                                value="Vui lòng nhập tên trường">
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>
-                                                <span>Ngành học</span>
-                                                <span>(*)</span>
-                                            </label>
-                                            <input type="text" class="mt-4 form-control"
-                                                value="Vui lòng nhập ngành học">
-                                        </div>
-                                        <div class="form-group-item">
-                                            <label>Thông tin khác</label>
-                                        </div>
-                                        <div class="mt-4" id="editor2"></div>
-                                    </div>
-                                </div>
+                    <button class="accordion">Home <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="/">Home Page</a>
+                            </li>
+                            <li>
+                                <a href="/">Home Page 2</a>
+                            </li>
+                            <li>
+                                <a href="/">Home Page 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Category <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="/">Category 1</a>
+                            </li>
+                            <li>
+                                <a href="/">Category 2</a>
+                            </li>
+                            <li>
+                                <a href="/">Category 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="accordion">Contact <span class="icon-chevron-down"></span></button>
+                    <div class="panel">
+                        <ul>
+                            <li>
+                                <a href="/">Contact 1</a>
+                            </li>
+                            <li>
+                                <a href="/">Contact 2</a>
+                            </li>
+                            <li>
+                                <a href="/">Contact 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="../../assets/img/logo/logo-white.png" alt="">
+                </div>
+                <div class="nav-bar-menu">
+                    <ul class="nav">
+                        <li>
+                            <a href="#" class="nav-item">Home <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
                             </div>
-                        </form>
+                        </li>
+                        <li><a href="#" class="nav-item">Jobs <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Jobs</a>
+                                <a href="#" class="drop-item">Job Favorite</a>
+                                <a href="#" class="drop-item">Post a Job</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Candidates <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Candidates</a>
+                                <a href="#" class="drop-item">Candidate Favorite</a>
+                                <a href="#" class="drop-item">Post a Candidate</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Employers <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">List Company</a>
+                                <a href="#" class="drop-item">Company Details</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Blog <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Blog list</a>
+                                <a href="#" class="drop-item">Top Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-item">Contact Us <i class="fad fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#" class="drop-item">Home Page</a>
+                                <a href="#" class="drop-item">Home Page 2</a>
+                                <a href="#" class="drop-item">Home Page 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search-post">
+                        <button class="search clear-button">
+                            <i class="fad fa-search"></i>
+                        </button>
+                        <button class="post clear-button">
+                            <i class="fad fa-plus-circle"></i> <span>post a job</span>
+                        </button>
+                    </div>
+                </div>
+                <div href="/" class="clear-button account">
+                    <div class="user-info">
+                        <i class="fad fa-user"></i>
+                        <ul class="user-menu">
+                            <li><a href=""><i class="fad fa-file-user"></i> Profile</a></li>
+                            <li><a href=""><i class="fad fa-sign-out"></i> Logout</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor2'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor3'))
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
+    </div>
+    <div id="Content">
+        <div class="box profile-wrapper">
+            <div class="profile-left-wrapper">
+                <div class="profile-top">
+                    <div class="avatar">
+                        <img src="https://ict-imgs.vgcloud.vn/2020/09/01/19/huong-dan-tao-facebook-avatar.jpg" alt="">
+                    </div>
+                    <p class="name">
+                        Nguyễn Phan Huy Hiếu
+                    </p>
+                    <div class="position">
+                        Developer
+                    </div>
+                    <div class="btn-change-avatar">
+                        <button class="btn-change">
+                            Change Avatar
+                        </button>
+                    </div>
+                </div>
+                <div class="social">
+                    <ul class="list-social">
+                        <li>
+                            <a href=""><i class="fab fa-facebook"></i> <span>huyhieu.nguyenphan</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i> <span>huyhieu.nguyenphan</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-linkedin"></i> <span>nguyenhieu1408</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i> <span>huyhieu.nguyenphan</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile-right-wrapper">
+                <div class="info">
+                    <div class="info-item">
+                        <div class="label">
+                            Full name
+                        </div>
+                        <div class="value">
+                            Nguyễn Phan Huy Hiếu
+                            <button class="clear-button"><i class="fad fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">
+                            Email
+                        </div>
+                        <div class="value">
+                            huyhieu.nguyenphan@gmail.com
+                            <button class="clear-button"><i class="fad fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">
+                            Phone
+                        </div>
+                        <div class="value">
+                            0911348766
+                            <button class="clear-button"><i class="fad fa-edit"></i></button>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">
+                            Address
+                        </div>
+                        <div class="value">
+                            113 Tran Phu, Hue
+                            <button class="clear-button"><i class="fad fa-edit"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-right-bottom">
+                    <div class="project-list">
+                        <div class="title">
+                            Project
+                        </div>
+                        <div class="project-item">
+                            <i class="fad fa-project-diagram"></i>
+                            <a href="#">
+                                Fashion Application
+                            </a>
+                        </div>
+                        <div class="project-item">
+                            <i class="fad fa-project-diagram"></i>
+                            <a href="#">
+                                Fashion Application
+                            </a>
+                        </div>
+                        <div class="project-item">
+                            <i class="fad fa-project-diagram"></i>
+                            <a href="#">
+                                Fashion Application
+                            </a>
+                        </div>
+                        <div class="project-item">
+                            <i class="fad fa-project-diagram"></i>
+                            <a href="#">
+                                Fashion Application
+                            </a>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="title">
+                            Skills
+                        </div>
+                        <div class="skillbar-wrapper">
+                            <div class="skillbar clearfix html5" data-percent="100%">
+                                <h4 class="skillbar-title"><span>HTML5</span></h4>
+                                <div class="skillbar-bar"></div>
+                                <div class="skill-bar-percent">100%</div>
+                            </div>
+
+                            <div class="skillbar clearfix css" data-percent="100%">
+                                <h4 class="skillbar-title"><span>CSS</span></h4>
+                                <div class="skillbar-bar"></div>
+                                <div class="skill-bar-percent">100%</div>
+                            </div>
+
+                            <div class="skillbar clearfix javascript" data-percent="100%">
+                                <h4 class="skillbar-title"><span>JavaScript</span></h4>
+                                <div class="skillbar-bar"></div>
+                                <div class="skill-bar-percent">100%</div>
+                            </div>
+
+                            <div class="skillbar clearfix jquery" data-percent="100%">
+                                <h4 class="skillbar-title"><span>jQuery</span></h4>
+                                <div class="skillbar-bar"></div>
+                                <div class="skill-bar-percent">100%</div>
+                            </div>
+
+                            <div class="skillbar clearfix php" data-percent="100%">
+                                <h4 class="skillbar-title"><span>PHP</span></h4>
+                                <div class="skillbar-bar"></div>
+                                <div class="skill-bar-percent">100%</div>
+                            </div>
+
+                            <div class="skillbar clearfix wordpress" data-percent="100%">
+                                <h4 class="skillbar-title"><span>WordPress</span></h4>
+                                <div class="skillbar-bar"></div>
+                                <div class="skill-bar-percent">100%</div>
+                            </div>
+
+                            <div class="skillbar clearfix server" data-percent="90%">
+                                <h4 class="skillbar-title"><span>Server</span></h4>
+                                <div class="skillbar-bar"></div>
+                                <div class="skill-bar-percent">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Footer">
+        <div class="box">
+            <div class="footer-head">
+                <div class="contact">
+                    <div class="logo">
+                        <img src="../../assets/img/logo/logo-white.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <p>
+                            Donec id elit non mi porta graat eget metus. Akshay id elit non Vestibulum id ligula .
+                        </p>
+                    </div>
+                    <a href="/" class="clear-button button">
+                        Read Article <i class="fad fa-arrow-right"></i>
+                    </a>
+
+                    <div class="social-group">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube-square"></i>
+                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-google-plus-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="candidate">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-angle-right"></i>
+                                <p>Browse Candidates</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <div class="title-footer">
+                        <p>For Employers </p>
+                    </div>
+                    <ul class="items">
+                        <li><a href="/"><i class="fad fa-map-marker-alt"></i>
+                                <p>7007 Riverside Dr Redding, CA 96001 USA</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-phone-alt"></i>
+                                <p>Call us +49 1234 5678 9</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-envelope"></i>
+                                <p>example@gmail.com</p>
+                            </a></li>
+                        <li><a href="/"><i class="fad fa-clock"></i>
+                                <p> Mon-Sat: 8:00am - 7:00pm</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coppyright">
+                <div class="display-flex-1 justify-content-between width-100">
+                    <p>© Copyright 2018 by <a href="/">Entaro</a>. All Rights Reserved.</p>
+                    <div class="policy">
+                        <a href="/">Terms of Use</a>
+                        <div class="vertical-line"></div>
+                        <a href="/">Privacy Policy</a>
+                        <div class="vertical-line"></div>
+                        <a href="/">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../../assets/js/profile.js"></script>
 </body>
 
